@@ -128,15 +128,13 @@ captionpos=b, float=htbp, xleftmargin=2em,frame=single,framexleftmargin=1.5em, b
 % Situation sensitive spacing at the end of commands
 \usepackage{xspace}
 % literature references
-\usepackage[style=numeric-comp,uniquename=init, maxcitenames=2, minbibnames=5, maxbibnames=5, giveninits=true]{biblatex}
+\usepackage[backend=biber, style=apa,uniquename=init, maxcitenames=2, minbibnames=5, maxbibnames=5, giveninits=true]{biblatex}
 % other styles suitable: ieee alphabetic-verb numeric-comp [Just try them^^]
 % Prevent line break at before citation number in textcite
 \renewcommand\namelabeldelim{\addnbspace}
 % Delete some fields out of the bibentries
 \AtEveryBibitem{%
  \clearfield{note}%
- \clearfield{pages}%
- \clearfield{volume}%
  %
  \ifentrytype{book}{
   \clearfield{url}%
@@ -199,4 +197,4 @@ captionpos=b, float=htbp, xleftmargin=2em,frame=single,framexleftmargin=1.5em, b
 \IfFileExists{#1.tex}{\input{#1.tex}}{Error: Cannot include #1. Please check your compiler toolchain}}
 
 % Glossaries
-\usepackage[toc, nonumberlist]{glossaries}
+\usepackage[toc, nonumberlist, acronym]{glossaries}
