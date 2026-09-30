@@ -8,21 +8,107 @@
 
 Bevor sich diese Arbeit im Detail mit dem Begriff der Datenqualität beschäftigt, stellt sich zunächst einmal die Frage, was unter dem Begriff Daten verstanden wird. Allgemein wird in der Literatur zwischen Daten und Informationen unterschieden. Bei der Suche nach einer Definition zeigt sich jedoch, dass kein einheitliches Begriffsverständnis existiert. \textcite{zinsConceptualApproachesDefining2007} untersucht hierzu zahlreiche, unterschiedliche Auffassungen der Begriffe Daten und Informationen und stellt verschiedene konzeptionelle Ansätze gegenüber. Daten können dabei als Zeichen verstanden werden, die Beobachtungen oder Sachverhalte abbilden. Informationen unterscheiden sich von Daten dadurch, dass ihnen Bedeutung zugeordnet wird \parencite{zinsConceptualApproachesDefining2007}. Im Rahmen dieser Arbeit bezieht sich der Begriff Daten auf digital gespeicherte Fahrzeug- und Prozessdaten, die im betrachteten Fahrzeugwiedervermarktungsprozess erzeugt, verarbeitet und gespeichert werden. 
 
-Die alleinige Verfügbarkeit von Daten stellt jedoch nicht sicher, dass diese für ihren vorgesehenen Verwendungszweck geeignet sind. An dieser Stelle gewinnt das Konzept der Datenqualität an Bedeutung. Datenqualität wird oft als 'fitness for use' beschrieben \parencite{wangAccuracyWhatData1996,wattsDataQualityAssessment2009,tayiExaminingDataQuality1998}. Das bedeutet, Datenqualität orientiert sich daran, ob die Daten sich für einen bestimmten Anwendungskontext eignen. Datenqualität ist damit kein statischer Zustand, sondern muss immer im Kontext der vorgesehenen Nutzung betrachtet werden. Während ein Attribut für einen Prozess vollkommen belanglos ist, stellt es in einem anderen Prozess eventuell einen zentralen Bestandteil dar \parencite{wattsDataQualityAssessment2009}. Mohammed et al. zeigen zusätzlich, aus welchen Perspektiven dieser Kontext betrachtet werden kann. Zu diesen 5 Perspektiven gehören: die Daten selbst, die Quelle der Daten, das System, in dem Daten gespeichert werden, die Aufgabe, für die die Daten herangezogen werden und die Menschen, die mit den Daten interagieren \parencite{mohammedFiveFacetsData2024}. Dadurch wird nochmal deutlicher, dass Datenqualität nicht ausschließlich anhand der Eigenschaften eines Datensatzes beurteilt werden kann, sondern auch von dessen Entstehungs-, Verarbeitungs- und Nutzungskontext abhängt. Test \glossary{cdh}
+Die alleinige Verfügbarkeit von Daten stellt jedoch nicht sicher, dass diese für ihren vorgesehenen Verwendungszweck geeignet sind. An dieser Stelle gewinnt das Konzept der Datenqualität an Bedeutung. Datenqualität wird oft als 'fitness for use' beschrieben \parencite{wangAccuracyWhatData1996,wattsDataQualityAssessment2009,tayiExaminingDataQuality1998}. Das bedeutet, Datenqualität orientiert sich daran, ob die Daten sich für einen bestimmten Anwendungskontext eignen. Datenqualität ist damit kein statischer Zustand, sondern muss immer im Kontext der vorgesehenen Nutzung betrachtet werden. Während ein Attribut für einen Prozess vollkommen belanglos ist, stellt es in einem anderen Prozess eventuell einen zentralen Bestandteil dar \parencite{wattsDataQualityAssessment2009}. Mohammed et al. zeigen zusätzlich, aus welchen Perspektiven dieser Kontext betrachtet werden kann. Zu diesen 5 Perspektiven gehören: die Daten selbst, die Quelle der Daten, das System, in dem Daten gespeichert werden, die Aufgabe, für die die Daten herangezogen werden und die Menschen, die mit den Daten interagieren \parencite{mohammedFiveFacetsData2024}. Dadurch wird nochmal deutlicher, dass Datenqualität nicht ausschließlich anhand der Eigenschaften eines Datensatzes beurteilt werden kann, sondern auch von dessen Entstehungs-, Verarbeitungs- und Nutzungskontext abhängt.
 
 Daraus leitet sich allerdings die Frage ab: Wenn Datenqualität vom Verwendungszweck abhängt, anhand welcher Eigenschaften kann sie dann bewertet werden?
 
 \section{Datenqualitätsdimensionen}
 
-- Wang und Strong: most important dimensions are accuracy, timeliness, precision, reliability, currency, completeness, relevancy, accessibility, interpretability
+Aufbauend auf der zuvor dargestellten Begriffsdefinition stellt sich die Frage, anhand welcher Merkmale Datenqualität konkret beschrieben und beurteilt werden kann. Hier kommen Datenqualitätsdimensionen ins Spiel. \textcite{wangAccuracyWhatData1996} definieren eine Datenqualitätsdimension als eine Menge von Datenqualitätsmerkmalen, die einen einzelnen Aspekt beziehungsweise ein bestimmtes Konstrukt der Datenqualität repräsentiert. Dabei ist es wichtig zu beachten, dass Datenqualität ein multidimensionales Konzept ist, da sie sich nicht anhand eines einzelnen Qualitätsmerkmales beurteilen lässt, sondern verschiedene Aspekte der Datenqualität berücksichtigt werden müssen. Dazu gibt es in der Literatur zahlreiche verschiedene Ansätze, die jeweils den Fokus auf andere Datenqualitätsdimensionen legen. Dies verdeutlicht, dass in diesem Forschungsfeld bislang keine einheitliche Standardisierung besteht \parencite{zotero-item-22}. 
 
-- pipino et al.: consistency, believability, appropriate amounts of data, timeliness, accessibility, completeness, concise representation, objectivity, consistent representation, security, value-added, interpretability, free-of-error, ease of manipulation, relevancy, reputation
+\textcite{wangAccuracyWhatData1996} haben eine Umfrage durchgeführt, um festzustellen, anhand welcher Datenqualitätsdimensionen Datennutzer beurteilen, ob die Daten 'fit for their tasks' sind. Als Ergebnis wurde eine Liste mit 181 verschiedenen Datenqualitätsdimensionen zusammengestellt. Basierend auf diesen Umfragen, kamen sie zu dem Schluss das zu den wichtigsten Datenqualitätsdimensionen accuracy, timeliness, precision, reliability, currency, completeness, relevancy, accessibility und interpretability zählen.
 
-- marsh: accuracy, integrity, consistency, completeness, validity, timeliness, accessibility, compliance
+Einen kompakteren Ansatz zur Einordnung von Datenqualität stellen \textcite{tayiExaminingDataQuality1998} dar. Sie betrachten accuracy, completeness, consistency und timeliness als zentrale Dimensionen der Datenqualität und überschneiden sich damit stark mit \textcite{wangAccuracyWhatData1996}.
 
-- rangieni: accuracy, completeness, consistency, timeliness, reliability
+Eine umfangreichere Betrachtung findet sich hingegen bei \textcite{pipinoDataQualityAssessment}. Hier wird argumentiert, dass Unternehmen Datenqualität immer von zwei Seiten betrachten müssen: (1)~ die subjektive Wahrnehmung der Daten durch Datennutzer und (2)~ die objektiven Messungen basierend auf dem relevanten Datenset. Besonders auf die subjektive Wahrnehmung sollen Unternehmen Wert legen, da der Umgang der Stakeholder mit den Daten davon beeinflusst wird, ob sie die Qualität dieser als gut oder schlecht einschätzen. Das Ziel sollte es sein, sowohl eine möglichst hohe subjektive als auch objektive Bewertung zu erlangen. Zur Durchführung dieser Bewertungen werden in diesem Artikel die folgenden Datenqualitätsdimensionenherangezogen: accessibility, appropriate amount of data, believability, completeness, concise representation, consistent representation, ease of manipulation, free-of-error, interpretability, objectivity, relevancy, reputation, security, timeliness, understandability und value-added.
 
-- ballou: accuracy, completeness, consistency, timeliness
+Mit seiner vier-stufigen Methodik für gesamtheitliches Datenqualitätsmanagement stellt \textcite{marshDrowningDirtyData2005} wieder einen neuen Ansatz vor. Er ist der Überzeugung, dass Unternehmen die Datenqualität durch einen kontinuierlichen, zyklischen Prozess absichern sollen. Dieser Zyklus setzt sich zusammen aus (1)~der Inspektion der bestehenden Daten, (2)~der Säuberung der Daten durch Korrektur und Reformatierung, (3)~der Fehlervermeidung durch regelmäßige Aktualisierung der Validierungsregeln und schließlich aus (4)~dem Schaffen von Compliance Kriterien, um Datenqualität kontinuierlich zu überwachen, messen und zu managen. Seiner Meinung nach sollten Daten diese Datenqualitätsdimensionen verkörpern: accuracy, integrity, consistency, completeness, validity, timeliness, accessibility und compliance.
+
+Eine aktuellere Betrachtung liefert \textcite{rangineniReviewEnhancingData2023}. Die Autoren identifizieren accuracy, completeness, consistency, timeliness und reliability als zentrale Dimensionen. Die Dimensionen überschneiden sich stark mit älteren Ansätzen, insbesondere mit denen von \textcite{wangAccuracyWhatData1996}. Das Paper stellt einen stärkeren Bezug zu Data Analytics her und betont, dass hochwertige Daten nicht nur fehlerfrei sein müssen, sondern den Anforderungen der jeweiligen Anwendungen und Prozesse entsprechen müssen.
+
+In der folgenden Tabelle~\ref{tab:dq-dimensionen} werden die verschiedenen Ansätze gegenübergestellt und mit einem X gekennzeichnet, welche Datenqualitätsdimensionen im entsprechenden Ansatz berücksichtigt wird.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Vergleich von Datenqualitätsdimensionen in ausgewählten Ansätzen}
+    \label{tab:dq-dimensionen}
+
+    \makebox[\textwidth][c]{%
+        \resizebox{\textwidth}{!}{%
+            \begin{tabular}{lccccc}
+                \toprule
+                \textbf{Dimension}
+                & \textbf{Wang \& Strong}
+                & \textbf{Tayi \& Ballou}
+                & \textbf{Pipino et al.}
+                & \textbf{Marsh}
+                & \textbf{Rangineni et al.} \\
+                \midrule
+
+                Accuracy                    & X & X &   & X & X \\
+                \cmidrule(lr){1-6}
+                Accessibility               & X &   & X & X &   \\
+                \cmidrule(lr){1-6}
+                Appropriate Amount of Data  &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Believability               &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Completeness                & X & X & X & X & X \\
+                \cmidrule(lr){1-6}
+                Compliance                  &   &   &   & X &   \\
+                \cmidrule(lr){1-6}
+                Concise Representation      &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Consistency                 &   & X &   & X & X \\
+                \cmidrule(lr){1-6}
+                Consistent Representation   &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Currency                    & X &   &   &   &   \\
+                \cmidrule(lr){1-6}
+                Ease of Manipulation        &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Free-of-Error               &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Integrity                   &   &   &   & X &   \\
+                \cmidrule(lr){1-6}
+                Interpretability            & X &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Objectivity                 &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Precision                   & X &   &   &   &   \\
+                \cmidrule(lr){1-6}
+                Relevancy                   & X &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Reliability                 & X &   &   &   & X \\
+                \cmidrule(lr){1-6}
+                Reputation                  &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Security                    &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Timeliness                  & X & X & X & X & X \\
+                \cmidrule(lr){1-6}
+                Understandability           &   &   & X &   &   \\
+                \cmidrule(lr){1-6}
+                Validity                    &   &   &   & X &   \\
+                \cmidrule(lr){1-6}
+                Value-added                 &   &   & X &   &   \\
+
+                \bottomrule
+                
+            \end{tabular}
+        }
+    }
+    
+\end{table}
+
+Wie die Gegenüberstellung verdeutlicht, existiert kein einheitlicher Ansatz, jedoch sind die Dimensionen Accuracy, Completeness, Consistency und Timeliness bei den Meisten vertreten.
+
+Neben diesen Ansätzen aus der Literatur existieren zur Absicherung der Datenqualität außerdem verschiedenste Frameworks, die unterschiedliche, standardisierte Vorgehen zur Etablierung von Data Quality Management vorschlagen. \textcite{zotero-item-21} haben diese Frameworks verglichen, um einen Überblick über die angewendeten Vorgehensweisen und Dimensionen zu schaffen. Zu den aufgeführten Frameworks gehört beispielsweise TDQM (Total Data Quality Management), die Normenreihe ISO 8000 oder die Normenreihe ISO 25012. Der Vergleich der Frameworks hat gezeigt, dass besonders die Dimensionen Accuracy, Completeness, Consistency und Timeliness besonders stark vertreten sind. Diese Erkenntnis bestätigt die Schlussfolgerung aus der obigen Tabelle ~\ref{tab:dq-dimensionen}. Daher werden diese vier Dimensionen im Folgenden näher definiert.
+
+Accuracy 
+
+
+
 
 \section{Datenqualitätsmessung und Validierung}
 

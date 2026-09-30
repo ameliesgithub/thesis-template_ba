@@ -1,0 +1,861 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{marshDrowningDirtyData2005}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=adf566475dd9375801e12c8a797c5e3a}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Henry Stewart Publications}%
+      }
+      \strng{namehash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{fullhash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{fullhashraw}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{bibnamehash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{authorbibnamehash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{authornamehash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{authorfullhash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{authorfullhashraw}{adf566475dd9375801e12c8a797c5e3a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Database Marketing \& Customer Strategy Management}
+      \field{number}{2}
+      \field{title}{Drowning in Dirty Data? {{It}}´s Time to Sink or Swim: {{A}} Four-Stage Methodology for Total Data Quality Management}
+      \field{volume}{12}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{pages}{105\bibrangedash 112}
+      \range{pages}{8}
+    \endentry
+    \entry{zotero-item-22}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=48dba69e7d94c4f8ab479a44ac8e5b54}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7e79c39d92b7341465ac7ad7673c74e}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Harvey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecb4e059f2020125507e9b1912648c20}{%
+           family={Chrubasik},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5ee0fadb733edf8695b6242aa7bd64d}{%
+           family={Whittaker},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3102ff43c19a5859c94b50e8fd724ce9}{%
+           family={Duncan},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0c8089f8eba8673476fe98bca51672c}{%
+           family={Gregorio},
+           familyi={G\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{fullhash}{1b17aa01b435682946e5ca9915c9f8d5}
+      \strng{fullhashraw}{1b17aa01b435682946e5ca9915c9f8d5}
+      \strng{bibnamehash}{f8e65adcac1ef0e21539b79a1e6b0421}
+      \strng{authorbibnamehash}{f8e65adcac1ef0e21539b79a1e6b0421}
+      \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{authorfullhash}{1b17aa01b435682946e5ca9915c9f8d5}
+      \strng{authorfullhashraw}{1b17aa01b435682946e5ca9915c9f8d5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data}
+      \field{number}{12}
+      \field{title}{A {{Framework}} for {{Current}} and {{New Data Quality Dimensions}}: {{An Overview}}}
+      \field{volume}{9}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{mohammedFiveFacetsData2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a3ba900567bf6e1d9a110cb00643c814}{%
+           family={Mohammed},
+           familyi={M\bibinitperiod},
+           given={Sedir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4a8cbd63b1bae83240fb2b3252ac37a}{%
+           family={Ehrlinger},
+           familyi={E\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ce321f20daaa7081cc62fef0ada0247}{%
+           family={Naumann},
+           familyi={N\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91cb7fecb798a5f49d9b97b4ef97be90}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Divesh},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{23605a2774d1e9867bf49131744717bb}
+      \strng{fullhash}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{fullhashraw}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{bibnamehash}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{authorbibnamehash}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{authornamehash}{23605a2774d1e9867bf49131744717bb}
+      \strng{authorfullhash}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{authorfullhashraw}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{journaltitle}{ACM SIGMOD Record}
+      \field{month}{12}
+      \field{title}{The {{Five Facets}} of {{Data Quality Assessment}}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{pipinoDataQualityAssessment}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=873f474259aa6b1c3af5751e954df194}{%
+           family={Pipino},
+           familyi={P\bibinitperiod},
+           given={Leo\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9411fe89cc1d53c67b8847dc65eb2d34}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Yang\bibnamedelima W.},
+           giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e0c9622e0241ec9e74f173e87914994}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Richard\bibnamedelima Y.},
+           giveni={R\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2cd42b1593f6bcda391846f306004231}
+      \strng{fullhash}{80d7780cb1a9ea15595a61752b525241}
+      \strng{fullhashraw}{80d7780cb1a9ea15595a61752b525241}
+      \strng{bibnamehash}{80d7780cb1a9ea15595a61752b525241}
+      \strng{authorbibnamehash}{80d7780cb1a9ea15595a61752b525241}
+      \strng{authornamehash}{2cd42b1593f6bcda391846f306004231}
+      \strng{authorfullhash}{80d7780cb1a9ea15595a61752b525241}
+      \strng{authorfullhashraw}{80d7780cb1a9ea15595a61752b525241}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{4}
+      \field{title}{Data {{Quality Assessment}}}
+      \field{volume}{45}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{211\bibrangedash 218}
+      \range{pages}{8}
+    \endentry
+    \entry{rangineniReviewEnhancingData2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=594eafbc98f5f06a5fd0a628e8f789f3}{%
+           family={Rangineni},
+           familyi={R\bibinitperiod},
+           given={Sandeep},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5be48e8719a9b39c69744ed6c65c34e}{%
+           family={Bhanushali},
+           familyi={B\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93b05e09f2dc5547ec092434d87f66cd}{%
+           family={Suryadevara},
+           familyi={S\bibinitperiod},
+           given={Manoj},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28d72d848302687686ccf24fc71737b6}{%
+           family={Venkata},
+           familyi={V\bibinitperiod},
+           given={Srinivas},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51cb81a56fb4e3e32cc601a22e84b37c}{%
+           family={Peddireddy},
+           familyi={P\bibinitperiod},
+           given={Kiran},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6ee657caf032b646a2982245e3027c79}
+      \strng{fullhash}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{fullhashraw}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{bibnamehash}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{authorbibnamehash}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{authornamehash}{6ee657caf032b646a2982245e3027c79}
+      \strng{authorfullhash}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{authorfullhashraw}{ad95dea7397a696ad4a36076ce6181bc}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Sciences and Engineering}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{A {{Review}} on {{Enhancing Data Quality}} for {{Optimal Data Analytics Performance}}}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{51\bibrangedash 58}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.26438/ijcse/v11i10.5158
+      \endverb
+    \endentry
+    \entry{tayiExaminingDataQuality1998}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dc3884e5a95749f078ceb05813699b83}{%
+           family={Tayi},
+           familyi={T\bibinitperiod},
+           given={Giri\bibnamedelima Kumar},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71360f02f714679616fe92a017d6198a}{%
+           family={Ballou},
+           familyi={B\bibinitperiod},
+           given={Donald\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{fullhash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{fullhashraw}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{bibnamehash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{authorbibnamehash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{authornamehash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{authorfullhash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{authorfullhashraw}{b4d32121d5d63ae05f25b313dd05f68e}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Examining {{Data Quality}}}
+      \field{volume}{41}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{54\bibrangedash 57}
+      \range{pages}{4}
+    \endentry
+    \entry{wangAccuracyWhatData1996}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8e0c9622e0241ec9e74f173e87914994}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Richard\bibnamedelima Y.},
+           giveni={R\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=769f5dc46fa1ff64c22ea3168ff73e2d}{%
+           family={Strong},
+           familyi={S\bibinitperiod},
+           given={Diane\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{25484529b35cf893a82ea2496013162f}
+      \strng{fullhash}{25484529b35cf893a82ea2496013162f}
+      \strng{fullhashraw}{25484529b35cf893a82ea2496013162f}
+      \strng{bibnamehash}{25484529b35cf893a82ea2496013162f}
+      \strng{authorbibnamehash}{25484529b35cf893a82ea2496013162f}
+      \strng{authornamehash}{25484529b35cf893a82ea2496013162f}
+      \strng{authorfullhash}{25484529b35cf893a82ea2496013162f}
+      \strng{authorfullhashraw}{25484529b35cf893a82ea2496013162f}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{jstor}
+      \field{journaltitle}{Journal of Management Information Systems}
+      \field{number}{4}
+      \field{title}{Beyond Accuracy: {{What}} Data Quality Means to Data Consumers}
+      \field{volume}{12}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{pages}{5\bibrangedash 34}
+      \range{pages}{30}
+      \verb{eprint}
+      \verb 40398176
+      \endverb
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/40398176
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/40398176
+      \endverb
+    \endentry
+    \entry{wattsDataQualityAssessment2009}{inbook}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1142760374586434bd3bd40085a65c10}{%
+           family={Watts},
+           familyi={W\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9852b56acdae8c01995bad81966cae62}{%
+           family={Shankaranarayanan},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=09acff29ae4254314f1bcbaeb4db660f}{%
+           family={Even},
+           familyi={E\bibinitperiod},
+           given={Adir},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a0b3fee64df82f8ce099314971e3524}
+      \strng{fullhash}{45be92892b8e081274257b0700f4a9c5}
+      \strng{fullhashraw}{45be92892b8e081274257b0700f4a9c5}
+      \strng{bibnamehash}{45be92892b8e081274257b0700f4a9c5}
+      \strng{authorbibnamehash}{45be92892b8e081274257b0700f4a9c5}
+      \strng{authornamehash}{0a0b3fee64df82f8ce099314971e3524}
+      \strng{authorfullhash}{45be92892b8e081274257b0700f4a9c5}
+      \strng{authorfullhashraw}{45be92892b8e081274257b0700f4a9c5}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Decision {{Support Systems}}}
+      \field{title}{Data Quality Assessment in Context: {{A}} Cognitive Perspective}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{202\bibrangedash 211}
+      \range{pages}{10}
+    \endentry
+    \entry{zinsConceptualApproachesDefining2007}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8f4209013484aa4deb67afae174fdc4e}{%
+           family={Zins},
+           familyi={Z\bibinitperiod},
+           given={Chaim},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{fullhash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{fullhashraw}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{bibnamehash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{authorbibnamehash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{authornamehash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{authorfullhash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{authorfullhashraw}{8f4209013484aa4deb67afae174fdc4e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Society for Information Science and Technology}
+      \field{number}{4}
+      \field{title}{Conceptual {{Approaches}} for {{Defining Data}}, {{Information}} and {{Knowledge}}}
+      \field{volume}{58}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{479\bibrangedash 493}
+      \range{pages}{15}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{marshDrowningDirtyData2005}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=adf566475dd9375801e12c8a797c5e3a}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Henry Stewart Publications}%
+      }
+      \strng{namehash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{fullhash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{fullhashraw}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{bibnamehash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{authorbibnamehash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{authornamehash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{authorfullhash}{adf566475dd9375801e12c8a797c5e3a}
+      \strng{authorfullhashraw}{adf566475dd9375801e12c8a797c5e3a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Database Marketing \& Customer Strategy Management}
+      \field{number}{2}
+      \field{title}{Drowning in Dirty Data? {{It}}´s Time to Sink or Swim: {{A}} Four-Stage Methodology for Total Data Quality Management}
+      \field{volume}{12}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{pages}{105\bibrangedash 112}
+      \range{pages}{8}
+    \endentry
+    \entry{zotero-item-22}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=48dba69e7d94c4f8ab479a44ac8e5b54}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7e79c39d92b7341465ac7ad7673c74e}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Harvey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecb4e059f2020125507e9b1912648c20}{%
+           family={Chrubasik},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5ee0fadb733edf8695b6242aa7bd64d}{%
+           family={Whittaker},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3102ff43c19a5859c94b50e8fd724ce9}{%
+           family={Duncan},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0c8089f8eba8673476fe98bca51672c}{%
+           family={Gregorio},
+           familyi={G\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{fullhash}{1b17aa01b435682946e5ca9915c9f8d5}
+      \strng{fullhashraw}{1b17aa01b435682946e5ca9915c9f8d5}
+      \strng{bibnamehash}{f8e65adcac1ef0e21539b79a1e6b0421}
+      \strng{authorbibnamehash}{f8e65adcac1ef0e21539b79a1e6b0421}
+      \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{authorfullhash}{1b17aa01b435682946e5ca9915c9f8d5}
+      \strng{authorfullhashraw}{1b17aa01b435682946e5ca9915c9f8d5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data}
+      \field{number}{12}
+      \field{title}{A {{Framework}} for {{Current}} and {{New Data Quality Dimensions}}: {{An Overview}}}
+      \field{volume}{9}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{mohammedFiveFacetsData2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a3ba900567bf6e1d9a110cb00643c814}{%
+           family={Mohammed},
+           familyi={M\bibinitperiod},
+           given={Sedir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4a8cbd63b1bae83240fb2b3252ac37a}{%
+           family={Ehrlinger},
+           familyi={E\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ce321f20daaa7081cc62fef0ada0247}{%
+           family={Naumann},
+           familyi={N\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91cb7fecb798a5f49d9b97b4ef97be90}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Divesh},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{23605a2774d1e9867bf49131744717bb}
+      \strng{fullhash}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{fullhashraw}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{bibnamehash}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{authorbibnamehash}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{authornamehash}{23605a2774d1e9867bf49131744717bb}
+      \strng{authorfullhash}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \strng{authorfullhashraw}{f3d05d4f589d99a0ab5e02e3d6e6c5ce}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{journaltitle}{ACM SIGMOD Record}
+      \field{month}{12}
+      \field{title}{The {{Five Facets}} of {{Data Quality Assessment}}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{pipinoDataQualityAssessment}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=873f474259aa6b1c3af5751e954df194}{%
+           family={Pipino},
+           familyi={P\bibinitperiod},
+           given={Leo\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9411fe89cc1d53c67b8847dc65eb2d34}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Yang\bibnamedelima W.},
+           giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e0c9622e0241ec9e74f173e87914994}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Richard\bibnamedelima Y.},
+           giveni={R\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2cd42b1593f6bcda391846f306004231}
+      \strng{fullhash}{80d7780cb1a9ea15595a61752b525241}
+      \strng{fullhashraw}{80d7780cb1a9ea15595a61752b525241}
+      \strng{bibnamehash}{80d7780cb1a9ea15595a61752b525241}
+      \strng{authorbibnamehash}{80d7780cb1a9ea15595a61752b525241}
+      \strng{authornamehash}{2cd42b1593f6bcda391846f306004231}
+      \strng{authorfullhash}{80d7780cb1a9ea15595a61752b525241}
+      \strng{authorfullhashraw}{80d7780cb1a9ea15595a61752b525241}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{4}
+      \field{title}{Data {{Quality Assessment}}}
+      \field{volume}{45}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{211\bibrangedash 218}
+      \range{pages}{8}
+    \endentry
+    \entry{rangineniReviewEnhancingData2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=594eafbc98f5f06a5fd0a628e8f789f3}{%
+           family={Rangineni},
+           familyi={R\bibinitperiod},
+           given={Sandeep},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5be48e8719a9b39c69744ed6c65c34e}{%
+           family={Bhanushali},
+           familyi={B\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93b05e09f2dc5547ec092434d87f66cd}{%
+           family={Suryadevara},
+           familyi={S\bibinitperiod},
+           given={Manoj},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28d72d848302687686ccf24fc71737b6}{%
+           family={Venkata},
+           familyi={V\bibinitperiod},
+           given={Srinivas},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51cb81a56fb4e3e32cc601a22e84b37c}{%
+           family={Peddireddy},
+           familyi={P\bibinitperiod},
+           given={Kiran},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6ee657caf032b646a2982245e3027c79}
+      \strng{fullhash}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{fullhashraw}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{bibnamehash}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{authorbibnamehash}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{authornamehash}{6ee657caf032b646a2982245e3027c79}
+      \strng{authorfullhash}{ad95dea7397a696ad4a36076ce6181bc}
+      \strng{authorfullhashraw}{ad95dea7397a696ad4a36076ce6181bc}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Sciences and Engineering}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{A {{Review}} on {{Enhancing Data Quality}} for {{Optimal Data Analytics Performance}}}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{51\bibrangedash 58}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.26438/ijcse/v11i10.5158
+      \endverb
+    \endentry
+    \entry{tayiExaminingDataQuality1998}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dc3884e5a95749f078ceb05813699b83}{%
+           family={Tayi},
+           familyi={T\bibinitperiod},
+           given={Giri\bibnamedelima Kumar},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71360f02f714679616fe92a017d6198a}{%
+           family={Ballou},
+           familyi={B\bibinitperiod},
+           given={Donald\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{fullhash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{fullhashraw}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{bibnamehash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{authorbibnamehash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{authornamehash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{authorfullhash}{b4d32121d5d63ae05f25b313dd05f68e}
+      \strng{authorfullhashraw}{b4d32121d5d63ae05f25b313dd05f68e}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Examining {{Data Quality}}}
+      \field{volume}{41}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{54\bibrangedash 57}
+      \range{pages}{4}
+    \endentry
+    \entry{wangAccuracyWhatData1996}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8e0c9622e0241ec9e74f173e87914994}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Richard\bibnamedelima Y.},
+           giveni={R\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=769f5dc46fa1ff64c22ea3168ff73e2d}{%
+           family={Strong},
+           familyi={S\bibinitperiod},
+           given={Diane\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{25484529b35cf893a82ea2496013162f}
+      \strng{fullhash}{25484529b35cf893a82ea2496013162f}
+      \strng{fullhashraw}{25484529b35cf893a82ea2496013162f}
+      \strng{bibnamehash}{25484529b35cf893a82ea2496013162f}
+      \strng{authorbibnamehash}{25484529b35cf893a82ea2496013162f}
+      \strng{authornamehash}{25484529b35cf893a82ea2496013162f}
+      \strng{authorfullhash}{25484529b35cf893a82ea2496013162f}
+      \strng{authorfullhashraw}{25484529b35cf893a82ea2496013162f}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{jstor}
+      \field{journaltitle}{Journal of Management Information Systems}
+      \field{number}{4}
+      \field{title}{Beyond Accuracy: {{What}} Data Quality Means to Data Consumers}
+      \field{volume}{12}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{pages}{5\bibrangedash 34}
+      \range{pages}{30}
+      \verb{eprint}
+      \verb 40398176
+      \endverb
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/40398176
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/40398176
+      \endverb
+    \endentry
+    \entry{wattsDataQualityAssessment2009}{inbook}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1142760374586434bd3bd40085a65c10}{%
+           family={Watts},
+           familyi={W\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9852b56acdae8c01995bad81966cae62}{%
+           family={Shankaranarayanan},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=09acff29ae4254314f1bcbaeb4db660f}{%
+           family={Even},
+           familyi={E\bibinitperiod},
+           given={Adir},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a0b3fee64df82f8ce099314971e3524}
+      \strng{fullhash}{45be92892b8e081274257b0700f4a9c5}
+      \strng{fullhashraw}{45be92892b8e081274257b0700f4a9c5}
+      \strng{bibnamehash}{45be92892b8e081274257b0700f4a9c5}
+      \strng{authorbibnamehash}{45be92892b8e081274257b0700f4a9c5}
+      \strng{authornamehash}{0a0b3fee64df82f8ce099314971e3524}
+      \strng{authorfullhash}{45be92892b8e081274257b0700f4a9c5}
+      \strng{authorfullhashraw}{45be92892b8e081274257b0700f4a9c5}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Decision {{Support Systems}}}
+      \field{title}{Data Quality Assessment in Context: {{A}} Cognitive Perspective}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{202\bibrangedash 211}
+      \range{pages}{10}
+    \endentry
+    \entry{zinsConceptualApproachesDefining2007}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8f4209013484aa4deb67afae174fdc4e}{%
+           family={Zins},
+           familyi={Z\bibinitperiod},
+           given={Chaim},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{fullhash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{fullhashraw}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{bibnamehash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{authorbibnamehash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{authornamehash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{authorfullhash}{8f4209013484aa4deb67afae174fdc4e}
+      \strng{authorfullhashraw}{8f4209013484aa4deb67afae174fdc4e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Society for Information Science and Technology}
+      \field{number}{4}
+      \field{title}{Conceptual {{Approaches}} for {{Defining Data}}, {{Information}} and {{Knowledge}}}
+      \field{volume}{58}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{479\bibrangedash 493}
+      \range{pages}{15}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
