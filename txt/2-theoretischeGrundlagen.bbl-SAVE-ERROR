@@ -102,6 +102,7 @@
       \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
       \strng{authorfullhash}{1b17aa01b435682946e5ca9915c9f8d5}
       \strng{authorfullhashraw}{1b17aa01b435682946e5ca9915c9f8d5}
+      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
@@ -114,6 +115,56 @@
       \field{title}{A {{Framework}} for {{Current}} and {{New Data Quality Dimensions}}: {{An Overview}}}
       \field{volume}{9}
       \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{zotero-item-21}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=48dba69e7d94c4f8ab479a44ac8e5b54}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c67c341b8018605b0e59c6b15c5ec663}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Sai\bibnamedelimb Hin\bibnamedelima Matthew},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7e79c39d92b7341465ac7ad7673c74e}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Harvey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0c8089f8eba8673476fe98bca51672c}{%
+           family={Gregorio},
+           familyi={G\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{fullhash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{fullhashraw}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{bibnamehash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authorbibnamehash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{authorfullhash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authorfullhashraw}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Big Data and Cognitive Computing}
+      \field{number}{4}
+      \field{title}{A {{Comparison}} of {{Data Quality Frameworks}}: {{A Review}}}
+      \field{volume}{9}
+      \field{year}{2025}
       \field{dateera}{ce}
     \endentry
     \entry{mohammedFiveFacetsData2024}{article}{}{}
@@ -474,6 +525,56 @@
       \field{pages}{105\bibrangedash 112}
       \range{pages}{8}
     \endentry
+    \entry{zotero-item-21}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=48dba69e7d94c4f8ab479a44ac8e5b54}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c67c341b8018605b0e59c6b15c5ec663}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Sai\bibnamedelimb Hin\bibnamedelima Matthew},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7e79c39d92b7341465ac7ad7673c74e}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Harvey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0c8089f8eba8673476fe98bca51672c}{%
+           family={Gregorio},
+           familyi={G\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{fullhash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{fullhashraw}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{bibnamehash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authorbibnamehash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{authorfullhash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authorfullhashraw}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Big Data and Cognitive Computing}
+      \field{number}{4}
+      \field{title}{A {{Comparison}} of {{Data Quality Frameworks}}: {{A Review}}}
+      \field{volume}{9}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
     \entry{zotero-item-22}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=48dba69e7d94c4f8ab479a44ac8e5b54}{%
@@ -521,6 +622,7 @@
       \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
       \strng{authorfullhash}{1b17aa01b435682946e5ca9915c9f8d5}
       \strng{authorfullhashraw}{1b17aa01b435682946e5ca9915c9f8d5}
+      \field{extraname}{2}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
