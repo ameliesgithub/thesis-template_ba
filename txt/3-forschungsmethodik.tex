@@ -6,8 +6,98 @@
 
 \section{Design Science Research}
 
+Da im Rahmen dieser Arbeit nicht ausschließlich bestehende Daten untersucht, sondern ein Konzept zur systematischen automatisierten Validierung der Datenqualität entwickelt und evaluiert wird, ist ein passender Forschungsansatz erforderlich. Als methodischer Rahmen wird hierfür Design Science Research (DSR) herangezogen.
+
+Design Science Research verfolgt grundsätzlich das Ziel, bestehende Probleme innerhalb einer Organisation zu lösen \parencite{hevnerDsr}. Im Mittelpunkt steht dabei die Erstellung sowie die Evaluation eines Artefakts. Dieses Artefakt hilft dabei, die initiale Problemstellung besser zu verstehen und anschließend die Effektivität des entwickelten Lösungsvorschlages zu beurteilen.
+\textcite{hevnerDsr} differenziert hierbei zwischen vier verschiedenen Artefakt-Typen: (1) Konstrukte, (2) Modelle, (3) Methoden und (4) Instanziierungen. Dabei stellen Konstrukte Begriffe und Konzepte bereit, mit denen ein Problem und mögliche Lösungen beschrieben werden können. Modelle hingegen stellen eine reale Situation beziehungsweise einen Problembereich abstrahiert dar und helfen so dabei, Zusammenhänge zwischen Problem und Lösung zu beschreiben und Auswirkungen von Designentscheidungen zu untersuchen. Im Gegensatz dazu fokussieren Methoden und Instanziierungen sich auf eher praktische Anwendungen. Mit dem Artefakt "Methoden" werden Prozesse beziehungsweise Vorgehensweisen zur Lösung eines Problems definiert. Das Format dieser Definition kann dabei von formalen Algorithmen bis hin zu einfach beschriebenen Vorgehensweisen oder Best Practices reichen. Instanziierungen stellen wiederum konkrete Umsetzungen dar, durch die unter anderem die praktische Ausführung eines Designs demonstriert und dessen Eignung untersucht werden kann. 
+
+In dieser Arbeit wird zunächst ein Konzept zur automatisierten Datenvalidierung für den betrachteten Wiedervermarktungsprozess entwickelt. Zur praktischen Anwendung und Evaluation wird dieses anschließend technisch umgesetzt. Die daraus resultierende Implementierung kann als Instanziierung im Sinne von \textcite{hevnerDsr} eingeordnet werden, da sie die konkrete Realisierung des entwickelten Konzepts in dessen Anwendungskontext darstellt.
+
+\textcite{hevnerDsr} betont außerdem den Unterschied zwischen Design Science Research und reinem Routine Design. Vor der Anwendung des Design Science Research Ansatzes soll reflektiert werden, ob es sich "nur" um Routine Design handelt, also die Anwendung bereits bestehenden Wissens auf organisationale Probleme, oder ob wichtige ungelöste Probleme auf neue oder effizientere Art und Weise gelöst werden. Die technische Realisierung der automatisierten Datenvalidierung greift in dieser Arbeit zwar auf bestehende Technologien und unternehmensinterne Best Practices zurück. Diese bilden jedoch lediglich die technische Grundlage für die Umsetzung. Der Beitrag liegt in der kontextspezifischen Entwicklung des Validierungskonzepts, dessen Umsetzung als eine konkrete Instanziierung sowie der anschließenden systematischen Evaluation im Anwendungskontext. Vor diesem Hintergrund wird Design Science Research als geeigneter methodischer Rahmen für die vorliegende Arbeit betrachtet.
+
 \section{Vorgehensmodell}
 
+Während \textcite{hevnerDsr} grundlegende Richtlinien für die Durchführung von Design Science Research liefern, stellt die Design Science Research Methodology (DSRM) nach \textcite{peffersDesignScienceResearch2008} ein konkretes Prozessmodell für DSR bereit. Das Vorgehen dieser Arbeit orientiert sich an diesem Ansatz.
+\textcite{peffersDesignScienceResearch2008} unterteilt den Prozess in sechs Schritte: (1) die Problemidentifikation, (2) die Zieldefinition, (3) das Design und die Entwicklung, (4) die Demonstration, (5) die Evaluation und zuletzt (6) die Kommunikation. Abbildung \ref{fig:vorgehensmodell} stellt die sechs Phasen der DSRM und deren Übertragung auf das konkrete Vorgehen dieser Arbeit zusammenfassend dar.
+
+
+\begin{figure}[htbp]
+    \centering
+
+    \begin{tikzpicture}[
+        node distance=0.25cm,
+        phase/.style={
+            draw,
+            rounded corners,
+            align=center,
+            text width=13cm,
+            minimum height=0.95cm,
+            font=\small
+        },
+        arrow/.style={
+            ->,
+            thick
+        }
+    ]
+
+    \node[phase] (p1) {
+        \textbf{1. Problemidentifikation und Motivation}\\
+        Analyse des Anwendungskontextes und Identifikation der Datenqualitätsprobleme
+    };
+
+    \node[phase, below=of p1] (p2) {
+        \textbf{2. Zieldefinition}\\
+        Ermittlung fachlicher Anforderungen und Definition der Ziele
+    };
+
+    \node[phase, below=of p2] (p3) {
+        \textbf{3. Design und Entwicklung}\\
+        Entwicklung des Validierungskonzepts und technische Instanziierung
+    };
+
+    \node[phase, below=of p3] (p4) {
+        \textbf{4. Demonstration}\\
+        Anwendung der implementierten Validierungschecks auf reale Daten
+    };
+
+    \node[phase, below=of p4] (p5) {
+        \textbf{5. Evaluation}\\
+        Bewertung der Eignung und des Nutzens des entwickelten Konzepts
+    };
+
+    \node[phase, below=of p5] (p6) {
+        \textbf{6. Kommunikation}\\
+        Dokumentation und Kommunikation der Ergebnisse
+    };
+
+    \draw[arrow] (p1) -- (p2);
+    \draw[arrow] (p2) -- (p3);
+    \draw[arrow] (p3) -- (p4);
+    \draw[arrow] (p4) -- (p5);
+    \draw[arrow] (p5) -- (p6);
+
+    \end{tikzpicture}
+
+    \caption{Vorgehensmodell der Arbeit in Anlehnung an Peffers et al.}
+    \label{fig:vorgehensmodell}
+\end{figure}
+
+Im Folgenden werden die einzelnen Phasen des dargestellten Vorgehensmodells und deren konkrete Umsetzung im Rahmen dieser Arbeit näher erläutert.
+
+Die Problemidentifikation und Motivation erfolgt anhand einer Analyse des bestehenden Wiedervermarktungsprozesses und der darin verwendeten Daten. Dabei wird insbesondere untersucht, ob und wie Datenqualitätsprobleme derzeit erkannt und behandelt werden und an welchen Stellen Bedarf für Datenqualitätsprüfungen besteht. Die daraus abgeleitete Problemstellung bildet den Ausgangspunkt für die Definition der Lösungsziele.
+
+Aufbauend auf der identifizierten Problemstellung werden die Anforderungen an das zu entwickelnde Validierungskonzept definiert. Hierzu werden fachliche Anforderungen an die relevanten Daten mit den in Kapitel 2 erarbeiteten Grundlagen zur Datenqualität zusammengeführt. Ergänzend werden die bestehenden technischen Rahmenbedingungen berücksichtigt. Die daraus resultierenden Anforderungen bilden die Grundlage für die anschließende Konzeptentwicklung.
+
+Im Rahmen der Design- und Entwicklungsphase werden die zuvor definierten Anforderungen in ein konkretes Validierungskonzept überführt. Dazu werden geeignete Validierungsregeln abgeleitet und die betrachteten Datenqualitätsdimensionen in automatisiert überprüfbare Kriterien übersetzt. Anschließend erfolgt die technische Instanziierung des Konzepts innerhalb der bestehenden Systemlandschaft. Für die technische Realisierung wird zum Teil auf vorhandenen Technologien und unternehmensinterne Best Practices zurückgegriffen.
+
+Die Demonstration erfolgt durch die Anwendung der entwickelten Instanziierung auf reale Daten des Wiedervermarktungprozesses. Dabei werden die implementierten Validierungschecks automatisiert ausgeführt und die erzeugten Ergebnisse über eine API an die unternehmensinterne Plattform CDH geliefert. Dadurch wird die praktische Anwendbarkeit des entwickelten Konzepts im betrachteten Unternehmenskontext demonstriert.
+
+Anschließend wird das entwickelte Artefakt hinsichtlich der zuvor definierten Zielsetzungen und Anforderungen evaluiert. Hierzu soll insbesondere untersucht werden, inwiefern das entwickelte Konzept zur systematischen Erkennung und Bewertung relevanter Datenqualitätsprobleme geeignet ist. Die konkrete Evaluationsstrategie sowie die verwendeten Evaluationskriterien werden in Kapitel 3.3 näher erläutert.
+
+Die Kommunikation umfasst abschließend die strukturierte Dokumentation des Vorgehens, des entwickelten Artefakts und der gewonnenen Erkenntnisse im Rahmen dieser Bachelorarbeit sowie die Bereitstellung relevanter Ergebnisse für die beteiligten Fachbereiche.
+
 \section{Evaluationskonzept}
+
+Im Anschluss an die Entwicklung und Demonstration des Artefakts ist dessen systematische Evaluation erforderlich, um zu beurteilen, inwiefern die zuvor definierten Zielsetzungen erreicht werden. Zur strukturierten Planung der Evaluation wird das Framework for Evaluation in Design Science Research (FEDS) nach \textcite{venableFEDSFrameworkEvaluation2014} herangezogen. FEDS betrachtet Evaluation als zentralen Bestandteil von DSR, der sowohl Erkenntnisse zur Verbesserung des Artefakts liefern als auch zu einer sorgfältigen Durchführung beitragen kann.
 
 \end{document}
