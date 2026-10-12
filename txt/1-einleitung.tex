@@ -3,22 +3,71 @@
 \begin{document}
 
 \chapter{Einleitung}
+\label{chap:einleitung}
 
 \section{Problemstellung und Motivation}
 
+Eine hohe Datenqualität stellt eine wesentliche Voraussetzung für die zuverlässige Nutzung von Informationssystemen dar. Dies gilt insbesondere für Systeme, die Geschäftsprozesse durch die Bereitstellung und Verarbeitung großer Datenmengen unterstützen. Im Rahmen der Wiedervermarktung für Gebrauchtwagen wurde bei BMW eine neue Plattform intern entwickelt und den Kunden bereitgestellt. Nutzer der Plattform sind aktuell die europäischen Märkte, die mit Hilfe dieses Systems die Gebrauchtwagen durch den Wiedervermarktungsprozess schleusen.
+
+Anlass für die Entwicklung der neuen Plattform waren wiederkehrende Probleme sowie die mangelnde Stabilität des zuvor eingesetzten Systems, die zu Unzufriedenheit bei den Nutzern geführt haben. Mit der Neuentwicklung sollten wiederkehrende Probleme reduziert werden. Gleichzeitig sollte durch die interne Entwicklung eine vollständige Kontrolle und Transparenz über den zugrunde liegenden Quellcode geschaffen werden, um im Fall von Störungen oder Fehlern schneller und fundierter reagieren zu können.
+
+Trotz der erfolgreichen Einführung des Neusystems in einigen Märkten bestehen weiterhin erhebliche Herausforderungen hinsichtlich der Datenqualität. Nutzer des Plattform stoßen regelmäßig auf fehlerhafte, unvollständige oder inkonsistente Datenbestände. Dies führt dazu, dass einzelne Prozessschritte teilweise außerhalb des Systems, beispielsweise mithilfe von Excel-Tabellen, durchgeführt werden, um die Korrektheit der zugrunde liegenden Daten sicherzustellen. Da die im System bereitgestellten Informationen die Grundlage für operative Entscheidungen innerhalb des Wiedervermarktungsprozesses bilden, können Datenqualitätsprobleme zu zusätzlichem manuellen Aufwand, ineffizienten Prozessabläufen und einer verminderten Akzeptanz des Systems führen.
+
+Bisher besteht keine systematische Datenqualitätsüberwachung. Prüfungen erfolgen derzeit überwiegend manuell oder anhand verschiedener Auswertungen innerhalb von QuickSuite, ein von Amazon Web Services bereitgestellter Dienst zur Visualisierung, Analyse und Bereitstellung von Daten in interaktiven Dashboards. Ein strukturierter Ansatz zur standardisierten Überwachung der Datenqualität fehlt bisher. 
+
+Die vorliegende Arbeit setzt an dieser Problemstellung an und verfolgt das Ziel, ein Konzept zur automatisierten Datenvalidierung zu entwickeln. Dadurch sollen Datenqualitätsprobleme frühzeitig erkannt sowie Transparenz und Vertrauen in die bereitgestellten Daten erhöht werden.
+
 \section{Zielsetzung der Arbeit}
+
+Ziel der Arbeit ist die Entwicklung und Evaluation eines Konzepts zur automatisierten Überwachung und Validierung der Datenqualität im Kontext des Wiedervermakrtungsystems bei BMW. Dabei soll ein Ansatz erarbeitet werden, mit dem die Qualität relevanter Datenbestände systematisch überwacht und bewertet werden kann.
+
+Ein zentrales Ziel besteht darin, mehr Transparenz über die tatsächliche Qualität der bereitgestellten Daten zu schaffen. Datenqualitätsprobleme sollen nicht länger nur vereinzelt durch Nutzer oder manuelle Auswertungen identifiziert werden, sondern kontinuierlich und nachvollziehbar überwacht werden können.
+
+Darüber hinaus soll die automatisierte Durchführung von Datenprüfungen dazu beitragen, potenzielle Probleme bereits frühzeitig zu erkennen. Dadurch können Auffälligkeiten im Idealfall identifiziert und behoben werden, bevor sie Auswirkungen auf die Nutzer oder nachgelagerte Prozesse haben.
+Gleichzeitig soll der bisherige manuelle Aufwand für die Durchführung und Auswertung von Datenqualitätsprüfungen reduziert werden. Durch eine Standardisierung und Automatisierung der Prüfprozesse soll eine effizientere und konsistente Überwachung der Datenqualität ermöglicht werden. 
+
+Im Rahmen einer anschließenden Evaluation wird untersucht, inwiefern sich mit dem entwickelten Ansatz Datenqualitätsprobleme zuverlässig identifizieren lassen. Hierbei soll bewertet werden, welchen Beitrag das Konzept zur Transparenz und Überwachung der Datenqualität im Anwendungskontext leisten kann.
+
+Darüber hinaus soll die Arbeit einen Beitrag zum Aufbau einer verlässlichen Datengrundlage leisten. Eine hohe Datenqualität stellt eine wesentliche Voraussetzung für datengetriebene Entscheidungen, automatisierte Prozesse sowie den zukünftigen Einsatz KI-basierter Systeme dar.
 
 \section{Forschungsfrage}
 
-Wie kann ein Konzept zur automatisierten Validierung von Daten im Bereich der Fahrzeugwiedervermarktung entwickelt und praktisch umgesetzt werden?
+Aus der beschriebenen Problemstellung und Zielsetzung ergibt sich die folgende Hauptforschungsfrage:
+\begin{description} 
+    \item[\textbf{F\textsubscript{0}:}] \textbf{Wie kann ein Konzept zur automatisierten Überwachung und Validierung der Datenqualität im Wiedervermarktungsprozess von Gebrauchtwagen entwickelt und praktisch umgesetzt werden?} 
+    \label{rq:f0} 
+\end{description}
 
-Und darunter könnten Unterfragen liegen wie:
+Zur Beantwortung der Hauptforschungsfrage werden mehrere Unterfragen betrachtet. Diese adressieren die Ermittlung der Anforderungen, die Entwicklung und Umsetzung des Konzepts sowie dessen Evaluation.
+\begin{description} 
+    \item[\textbf{F\textsubscript{1}:}] Welche Datenqualitätsanforderungen bestehen für die relevanten Datenobjekte des Wiedervermarktungsprozesses? \label{rq:f1} 
+\end{description} 
 
-Welche Datenqualitätsanforderungen bestehen im betrachteten Anwendungskontext?
-Wie lassen sich diese Anforderungen in automatisiert überprüfbare Validierungsregeln überführen?
-Inwieweit lassen sich die abgeleiteten Regeln mit dem bestehenden technischen Framework umsetzen?
-Wie ist das entwickelte Validierungskonzept hinsichtlich [deiner Evaluationskriterien] zu bewerten?
+\begin{description} 
+    \item[\textbf{F\textsubscript{2}:}] Wie lassen sich die identifizierten Datenqualitätsanforderungen in automatisiert ausführbare Validierungsregeln überführen? 
+    \label{rq:f2} 
+\end{description} 
+
+\begin{description} 
+    \item[\textbf{F\textsubscript{3}:}] Wie kann das entwickelte Konzept im Anwendungskontext umgesetzt werden? 
+    \label{rq:f3} 
+\end{description} 
+
+\begin{description} 
+    \item[\textbf{F\textsubscript{4}:}] Welche Datenqualitätsprobleme lassen sich durch den entwickelten Ansatz identifizieren? 
+    \label{rq:f4} 
+\end{description} 
+
+\begin{description} 
+    \item[\textbf{F\textsubscript{5}:}] Wie ist das entwickelte Validierungskonzept hinsichtlich der Evaluationskriterien zu bewerten? 
+    \label{rq:f5} 
+\end{description}
+
+Die Beantwortung dieser Forschungsfragen bildet die Grundlage für die Entwicklung und Evaluation des Artefakts im Sinne der Design Science Research \ref{chap:Forschungsmethodik}. Die einzelnen Forschungsfragen werden dabei den entsprechenden Phasen der Konzeption, Umsetzung und Evaluation zugeordnet.
 
 \section{Aufbau der Arbeit}
+
+Die vorliegende Arbeit gliedert sich in sieben Kapitel. Nach der Einleitung und der Herleitung der Forschungsfragen werden in Kapitel \ref{chap:TheoGrundlagen} zunächst die theoretischen Grundlagen zu Datenqualität, Datenqualitätsmessung und automatisierter Datenvalidierung vorgestellt. Kapitel \ref{chap:Forschungsmethodik} erläutert die zugrunde liegende Forschungsmethodik auf Basis des Design-Science-Research-Ansatzes sowie das Vorgehens- und Evaluationsmodell. In Kapitel \ref{chap:prozessanalyse} erfolgt die Analyse des Wiedervermarktungsprozesses, einschließlich des fachlichen und technischen Kontextes sowie der relevanten Datenqualitätsanforderungen. Aufbauend darauf wird in Kapitel \ref{chap:konzeptentwicklung} ein Konzept zur automatisierten Überwachung und Validierung der Datenqualität entwickelt und technisch umgesetzt. Die Evaluation des entwickelten Ansatzes erfolgt in Kapitel \ref{chap:evaluation}. Abschließend werden in Kapitel \ref{chap:fazit} die Ergebnisse der Arbeit zusammengefasst, kritisch reflektiert und ein Ausblick auf mögliche Weiterentwicklungen gegeben.
+
 
 \end{document}
