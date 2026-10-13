@@ -19,6 +19,114 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{haugCostsPoorData2011}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=223fef4e84e1252f2f60b2e96dfba94d}{%
+           family={Haug},
+           familyi={H\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9d6106fe2f9917587e2aa4f70698c0e}{%
+           family={Zachariassen},
+           familyi={Z\bibinitperiod},
+           given={Frederik},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,useprefix=true,hash=7d60ea1fb0dea1d5333ad319e5eae6d6}{%
+           family={Liempd},
+           familyi={L\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{8673bc31569b19a299a1c44c599ef568}
+      \strng{fullhash}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{fullhashraw}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{bibnamehash}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{authorbibnamehash}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{authornamehash}{8673bc31569b19a299a1c44c599ef568}
+      \strng{authorfullhash}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{authorfullhashraw}{9b679a412e37fb45e5f2d46dce7c3227}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Industrial Engineering and Management}
+      \field{number}{2}
+      \field{title}{The Costs of Poor Data Quality}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{168\bibrangedash 193}
+      \range{pages}{26}
+      \verb{urlraw}
+      \verb https://www.econstor.eu/bitstream/10419/188448/1/v04-i02-p168_232-1425-1-PB.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.econstor.eu/bitstream/10419/188448/1/v04-i02-p168_232-1425-1-PB.pdf
+      \endverb
+    \endentry
+    \entry{hevnerDsr}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5aec260b5b1381edc4b8ff6755f2d543}{%
+           family={March},
+           familyi={M\bibinitperiod},
+           given={Salvatore\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c518c214dc9e77148493e9ea47f505ab}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jinsoo},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Sudha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{fullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{fullhashraw}{b163bef761d9a2c79a3d232595321775}
+      \strng{bibnamehash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authorbibnamehash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorfullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authorfullhashraw}{b163bef761d9a2c79a3d232595321775}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MIS Quarterly}
+      \field{number}{1}
+      \field{title}{Design {{Science}} in {{Information Systems Research}}}
+      \field{volume}{28}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{pages}{75\bibrangedash 105}
+      \range{pages}{31}
+    \endentry
     \entry{marshDrowningDirtyData2005}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=adf566475dd9375801e12c8a797c5e3a}{%
@@ -102,6 +210,7 @@
       \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
       \strng{authorfullhash}{1b17aa01b435682946e5ca9915c9f8d5}
       \strng{authorfullhashraw}{1b17aa01b435682946e5ca9915c9f8d5}
+      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
@@ -114,6 +223,56 @@
       \field{title}{A {{Framework}} for {{Current}} and {{New Data Quality Dimensions}}: {{An Overview}}}
       \field{volume}{9}
       \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{zotero-item-21}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=48dba69e7d94c4f8ab479a44ac8e5b54}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c67c341b8018605b0e59c6b15c5ec663}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Sai\bibnamedelimb Hin\bibnamedelima Matthew},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7e79c39d92b7341465ac7ad7673c74e}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Harvey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0c8089f8eba8673476fe98bca51672c}{%
+           family={Gregorio},
+           familyi={G\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{fullhash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{fullhashraw}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{bibnamehash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authorbibnamehash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{authorfullhash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authorfullhashraw}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Big Data and Cognitive Computing}
+      \field{number}{4}
+      \field{title}{A {{Comparison}} of {{Data Quality Frameworks}}: {{A Review}}}
+      \field{volume}{9}
+      \field{year}{2025}
       \field{dateera}{ce}
     \endentry
     \entry{mohammedFiveFacetsData2024}{article}{}{}
@@ -164,6 +323,93 @@
       \field{title}{The {{Five Facets}} of {{Data Quality Assessment}}}
       \field{year}{2024}
       \field{dateera}{ce}
+    \endentry
+    \entry{pasalaDataQualityCode2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=434aa1ea104ff3209bab0ddfed06bb04}{%
+           family={Pasala},
+           familyi={P\bibinitperiod},
+           given={Raveendra\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{fullhash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{fullhashraw}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{bibnamehash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{authorbibnamehash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{authornamehash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{authorfullhash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{authorfullhashraw}{434aa1ea104ff3209bab0ddfed06bb04}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Science and Research Archive}
+      \field{number}{2}
+      \field{title}{Data {{Quality}} as {{Code}}: {{Automating}} Validation Rules with Declarative Pipelines and {{CI}}/{{CD Integration}}}
+      \field{volume}{13}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{4224\bibrangedash 4233}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.30574/ijsra.2024.13.2.2665
+      \endverb
+    \endentry
+    \entry{peffersDesignScienceResearch2008}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3127efe8cdd4557b7228a8724f568529}{%
+           family={Peffers},
+           familyi={P\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b17b21a3e4c61d1302f46cba38c6e50}{%
+           family={Tuunanen},
+           familyi={T\bibinitperiod},
+           given={Tuure},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33ad207ea3031c6d744a31f5bc43c547}{%
+           family={Rothenberger},
+           familyi={R\bibinitperiod},
+           given={Marcus\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Samir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{fullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{fullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{bibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authorbibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authornamehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{authorfullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authorfullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Management Informations Systems}
+      \field{number}{3}
+      \field{title}{A {{Design Science Research Methodology}} for {{Information Systems Research}}}
+      \field{volume}{24}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{45\bibrangedash 77}
+      \range{pages}{33}
     \endentry
     \entry{pipinoDataQualityAssessment}{article}{}{}
       \name{author}{3}{}{%
@@ -271,6 +517,40 @@
       \verb 10.26438/ijcse/v11i10.5158
       \endverb
     \endentry
+    \entry{redmanImpactPoorData1998}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=01c3cd9401af2aacb414e683fcadf87a}{%
+           family={Redman},
+           familyi={R\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{fullhash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{fullhashraw}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{bibnamehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authorbibnamehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authornamehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authorfullhash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authorfullhashraw}{01c3cd9401af2aacb414e683fcadf87a}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{The {{Impact}} of {{Poor Data Quality}} on the {{Typical Enterprise}}}
+      \field{volume}{41}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{79\bibrangedash 82}
+      \range{pages}{4}
+    \endentry
     \entry{tayiExaminingDataQuality1998}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=dc3884e5a95749f078ceb05813699b83}{%
@@ -310,6 +590,51 @@
       \field{dateera}{ce}
       \field{pages}{54\bibrangedash 57}
       \range{pages}{4}
+    \endentry
+    \entry{venableFEDSFrameworkEvaluation2014}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=484768a02b93d0d7e5eaf0fc30fbcc40}{%
+           family={Venable},
+           familyi={V\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c5ea801fafcaa05a50bb7dde391922a}{%
+           family={Pries-Heje},
+           familyi={P\bibinithyphendelim H\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6364a5db3195777af09140358fdf8c14}{%
+           family={Baskerville},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f704bb1e6ef25d571777c010db098de2}
+      \strng{fullhash}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{fullhashraw}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{bibnamehash}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{authorbibnamehash}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{authornamehash}{f704bb1e6ef25d571777c010db098de2}
+      \strng{authorfullhash}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{authorfullhashraw}{39e4b6d67e0013cefd990fb1369563f4}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Information Systems}
+      \field{number}{1}
+      \field{title}{{{FEDS}}: A {{Framework}} for {{Evaluation}} in {{Design Science Research}}}
+      \field{volume}{25}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{77\bibrangedash 89}
+      \range{pages}{13}
     \endentry
     \entry{wangAccuracyWhatData1996}{article}{}{}
       \name{author}{2}{}{%
@@ -438,6 +763,114 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
+    \entry{haugCostsPoorData2011}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=223fef4e84e1252f2f60b2e96dfba94d}{%
+           family={Haug},
+           familyi={H\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9d6106fe2f9917587e2aa4f70698c0e}{%
+           family={Zachariassen},
+           familyi={Z\bibinitperiod},
+           given={Frederik},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,useprefix=true,hash=7d60ea1fb0dea1d5333ad319e5eae6d6}{%
+           family={Liempd},
+           familyi={L\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{8673bc31569b19a299a1c44c599ef568}
+      \strng{fullhash}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{fullhashraw}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{bibnamehash}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{authorbibnamehash}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{authornamehash}{8673bc31569b19a299a1c44c599ef568}
+      \strng{authorfullhash}{9b679a412e37fb45e5f2d46dce7c3227}
+      \strng{authorfullhashraw}{9b679a412e37fb45e5f2d46dce7c3227}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Industrial Engineering and Management}
+      \field{number}{2}
+      \field{title}{The Costs of Poor Data Quality}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{168\bibrangedash 193}
+      \range{pages}{26}
+      \verb{urlraw}
+      \verb https://www.econstor.eu/bitstream/10419/188448/1/v04-i02-p168_232-1425-1-PB.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.econstor.eu/bitstream/10419/188448/1/v04-i02-p168_232-1425-1-PB.pdf
+      \endverb
+    \endentry
+    \entry{hevnerDsr}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5aec260b5b1381edc4b8ff6755f2d543}{%
+           family={March},
+           familyi={M\bibinitperiod},
+           given={Salvatore\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c518c214dc9e77148493e9ea47f505ab}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jinsoo},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Sudha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{fullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{fullhashraw}{b163bef761d9a2c79a3d232595321775}
+      \strng{bibnamehash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authorbibnamehash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorfullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authorfullhashraw}{b163bef761d9a2c79a3d232595321775}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MIS Quarterly}
+      \field{number}{1}
+      \field{title}{Design {{Science}} in {{Information Systems Research}}}
+      \field{volume}{28}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{pages}{75\bibrangedash 105}
+      \range{pages}{31}
+    \endentry
     \entry{marshDrowningDirtyData2005}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=adf566475dd9375801e12c8a797c5e3a}{%
@@ -473,6 +906,56 @@
       \field{dateera}{ce}
       \field{pages}{105\bibrangedash 112}
       \range{pages}{8}
+    \endentry
+    \entry{zotero-item-21}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=48dba69e7d94c4f8ab479a44ac8e5b54}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c67c341b8018605b0e59c6b15c5ec663}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Sai\bibnamedelimb Hin\bibnamedelima Matthew},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7e79c39d92b7341465ac7ad7673c74e}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Harvey},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0c8089f8eba8673476fe98bca51672c}{%
+           family={Gregorio},
+           familyi={G\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{fullhash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{fullhashraw}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{bibnamehash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authorbibnamehash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
+      \strng{authorfullhash}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \strng{authorfullhashraw}{86ba38db1d4d47a1a87a93e14012d4f5}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Big Data and Cognitive Computing}
+      \field{number}{4}
+      \field{title}{A {{Comparison}} of {{Data Quality Frameworks}}: {{A Review}}}
+      \field{volume}{9}
+      \field{year}{2025}
+      \field{dateera}{ce}
     \endentry
     \entry{zotero-item-22}{article}{}{}
       \name{author}{6}{}{%
@@ -521,6 +1004,7 @@
       \strng{authornamehash}{77dd8567940a4edb10e89d8c22ac0b97}
       \strng{authorfullhash}{1b17aa01b435682946e5ca9915c9f8d5}
       \strng{authorfullhashraw}{1b17aa01b435682946e5ca9915c9f8d5}
+      \field{extraname}{2}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
@@ -583,6 +1067,93 @@
       \field{title}{The {{Five Facets}} of {{Data Quality Assessment}}}
       \field{year}{2024}
       \field{dateera}{ce}
+    \endentry
+    \entry{pasalaDataQualityCode2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=434aa1ea104ff3209bab0ddfed06bb04}{%
+           family={Pasala},
+           familyi={P\bibinitperiod},
+           given={Raveendra\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{fullhash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{fullhashraw}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{bibnamehash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{authorbibnamehash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{authornamehash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{authorfullhash}{434aa1ea104ff3209bab0ddfed06bb04}
+      \strng{authorfullhashraw}{434aa1ea104ff3209bab0ddfed06bb04}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Science and Research Archive}
+      \field{number}{2}
+      \field{title}{Data {{Quality}} as {{Code}}: {{Automating}} Validation Rules with Declarative Pipelines and {{CI}}/{{CD Integration}}}
+      \field{volume}{13}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{4224\bibrangedash 4233}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.30574/ijsra.2024.13.2.2665
+      \endverb
+    \endentry
+    \entry{peffersDesignScienceResearch2008}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3127efe8cdd4557b7228a8724f568529}{%
+           family={Peffers},
+           familyi={P\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b17b21a3e4c61d1302f46cba38c6e50}{%
+           family={Tuunanen},
+           familyi={T\bibinitperiod},
+           given={Tuure},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33ad207ea3031c6d744a31f5bc43c547}{%
+           family={Rothenberger},
+           familyi={R\bibinitperiod},
+           given={Marcus\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Samir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{fullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{fullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{bibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authorbibnamehash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authornamehash}{4ccaed1d47a4875e5f027cdf2d20bbca}
+      \strng{authorfullhash}{0d82c455b50c2b184d97697dac2e8660}
+      \strng{authorfullhashraw}{0d82c455b50c2b184d97697dac2e8660}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Management Informations Systems}
+      \field{number}{3}
+      \field{title}{A {{Design Science Research Methodology}} for {{Information Systems Research}}}
+      \field{volume}{24}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{45\bibrangedash 77}
+      \range{pages}{33}
     \endentry
     \entry{pipinoDataQualityAssessment}{article}{}{}
       \name{author}{3}{}{%
@@ -690,6 +1261,40 @@
       \verb 10.26438/ijcse/v11i10.5158
       \endverb
     \endentry
+    \entry{redmanImpactPoorData1998}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=01c3cd9401af2aacb414e683fcadf87a}{%
+           family={Redman},
+           familyi={R\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{fullhash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{fullhashraw}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{bibnamehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authorbibnamehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authornamehash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authorfullhash}{01c3cd9401af2aacb414e683fcadf87a}
+      \strng{authorfullhashraw}{01c3cd9401af2aacb414e683fcadf87a}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{The {{Impact}} of {{Poor Data Quality}} on the {{Typical Enterprise}}}
+      \field{volume}{41}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{79\bibrangedash 82}
+      \range{pages}{4}
+    \endentry
     \entry{tayiExaminingDataQuality1998}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=dc3884e5a95749f078ceb05813699b83}{%
@@ -729,6 +1334,51 @@
       \field{dateera}{ce}
       \field{pages}{54\bibrangedash 57}
       \range{pages}{4}
+    \endentry
+    \entry{venableFEDSFrameworkEvaluation2014}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=484768a02b93d0d7e5eaf0fc30fbcc40}{%
+           family={Venable},
+           familyi={V\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c5ea801fafcaa05a50bb7dde391922a}{%
+           family={Pries-Heje},
+           familyi={P\bibinithyphendelim H\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6364a5db3195777af09140358fdf8c14}{%
+           family={Baskerville},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f704bb1e6ef25d571777c010db098de2}
+      \strng{fullhash}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{fullhashraw}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{bibnamehash}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{authorbibnamehash}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{authornamehash}{f704bb1e6ef25d571777c010db098de2}
+      \strng{authorfullhash}{39e4b6d67e0013cefd990fb1369563f4}
+      \strng{authorfullhashraw}{39e4b6d67e0013cefd990fb1369563f4}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Information Systems}
+      \field{number}{1}
+      \field{title}{{{FEDS}}: A {{Framework}} for {{Evaluation}} in {{Design Science Research}}}
+      \field{volume}{25}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{77\bibrangedash 89}
+      \range{pages}{13}
     \endentry
     \entry{wangAccuracyWhatData1996}{article}{}{}
       \name{author}{2}{}{%

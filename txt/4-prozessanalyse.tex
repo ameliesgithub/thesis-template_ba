@@ -5,7 +5,86 @@
 \chapter{Analyse des Wiedervermarktungsprozesses}
 \label{chap:prozessanalyse}
 
-\section{System- und Datenkontext}
+\section{Fachlicher Kontext des Wiedervermarktungsprozesses}
+
+Der Wiedervermarktungsprozess umfasst sämtliche Aktivitäten zur Vermarktung und Veräußerung von Gebrauchtfahrzeugen nach deren Rückgabe. Der Prozess findet hauptsächlich im System "UVR EVO" statt. Die Rückführung von Fahrzeugen in den Wiedervermarktungsprozess erfolgt über verschiedene Inflow Channels. Diese beschreiben die unterschiedlichen Wege, über die Fahrzeuge dem Wiedervermarktungsprozess zugeführt werden. Beispiele dafür sind zum einen Leasing-Fahrzeuge, Vorführfahrzeuge bei Händlern, Mietfahrzeuge, die von Unternehmen wie Sixt zurückgekauft werden und einige mehr. Dabei wird das Fahrzeug nicht erst in das System eingeschleust, sobald es zurückgegeben wurde, sondern sobald bekannt ist, dass das Fahrzeug wiedervermarktet werden soll. 
+
+Bereits zu Beginn des Prozesses werden zu jedem Fahrzeug verschiedene Stammdaten und Prozessinformationen erfasst beziehungsweise aus bestehenden Systemen übernommen. Diese Daten begleiten das Fahrzeug über den gesamten Wiedervermarktungsprozess hinweg und werden fortlaufend ergänzt, aktualisiert und zwischen verschiedenen Systemen ausgetauscht.
+
+Nach dem Inflow durchlaufen die Fahrzeuge abhängig von Herkunft, Markt und Vermarktungsstrategie verschiedenen Prozesspfade. Die konkrete Ausgestaltung des Wiedervermarktungsprozesses kann dabei zwischen den einzelnen Märkten variieren, da unterschiedliche Prozesspartner, organisaotirsche Strukturen und Vermarktungskanäle zum EInsatz kommen. Trotz dieser Heterogenität lassen sich die wesentlichen Prozessschritte des Wiedervermarktungprozesses in einem verallgemeinerten Prozess zusammenfassen.
+Nach der physischen Rückgabe des Fahrzeugs erfolgt zunächst eine Begutachtung durch einen externen Dienstleister im Rahmen eines sogenannten \textit{Appraisals}. Ziel dieser Begutachtung ist die Erfassung und Dokumentation des aktuellen Fahrzeugzustands. Hierbei werden unter anderem Informationen zu Fahrzeugschäden, Gebrauchsspuren und der allgemeinen Fahrzeugbeschaffenheit erhoben. Die erfassten Daten werden anschließend über definierte Schnittsellen an UVR EVO übermittelt und dort für die weiteren Prozessschritte bereitgestellt.
+Auf Basis der verfügbaren Fahrzeug- und Zustandsdaten erfolgt anschließend die Preisermittlung. Diese wird durch lokale Preisexperten in den jeweiligen Märkten durchgeführt.
+Im nächsten Schritt wird das Fahrzeug für den Verkauf einem sogennanten \textit{Sale Event} zugewiesen. Hierbei handelt es sich um den eigentlichen Verkaufsvorgang. Abhängig von der gewählten Vermarktungsstrategie kommen unterschiedliche Verkaufsformen zum Einsatz. Dazu zählen beispielsweise \textit{Fixed Price Sale Events}, bei denen Fahrzeuge zu einem festgelegten Preis angeboten werden, sowie interne oder externe Auktionen, bei denen Händler Gebote auf die angebotenen Fahrzeuge abgeben können.
+Nach erfolgreichem Verkauf schließen sich weitere Prozesse an. Hierzu zählen insbesondere die Organisation des Fahrzeugstransports sowie die Rechnungsstellung gegenüber dem Käufer. Mit diesen Schritten wird der Wiedervermarktungsprozess abgeschlossen.
+
+\begin{figure}[htbp]
+    \centering
+
+    \begin{tikzpicture}[
+        node distance=0.6cm,
+        phase/.style={
+            draw,
+            rounded corners,
+            align=center,
+            minimum height=1cm,
+            font=\small
+        },
+        arrow/.style={
+            ->,
+            thick
+        }
+    ]
+
+    \node[phase] (p1) {Inflow};
+    
+    \node[phase, right=of p1] (p2) {Gutachten};
+
+    \node[phase, right=of p2] (p3) {Bepreisung};
+
+    \node[phase, right=of p3] (p4) {Verkauf};
+
+    \node[phase, right=of p4] (p5) {Transport};
+
+    \node[phase, right=of p5] (p6) {Rechnungsstellung};
+
+    \draw[arrow] (p1) -- (p2);
+    \draw[arrow] (p2) -- (p3);
+    \draw[arrow] (p3) -- (p4);
+    \draw[arrow] (p4) -- (p5);
+    \draw[arrow] (p5) -- (p6);
+
+    \end{tikzpicture}
+
+    \caption{Vereinfachte Darstellung des Wiedervermarktungprozesses}
+    \label{fig:Wiedervermarktungsprozess}
+\end{figure}
+
+Während des gesamten Wiedervermarktungsprozesses werden Fahrzeug- und Prozessdaten kontinuierlich erzeugt, ergänzt und zwischen einer Vielzahl interner sowie externer Systeme ausgetauscht. Neben Fahrzeugstammdaten werden dabei unter anderem Informationen zum Fahrzeugzustand, zur Preisermittlung, zu Verkaufsvorgängen, zum Transport sowie zur Rechnungsstellung verarbeitet. Die hohe Anzahl beteiligter Systeme, Prozesspartner und Schnittstellen erhöht die Komplexität der Datenverarbeitung erheblich. Gleichzeitig bildet die Qualität der bereitgestellten Daten die Grundlage für die ordnungsgemäße Durchführung nachgelagerter Prozessschritte und die Zuverlässigkeit der darauf basierenden Entscheidungen. Dardurch ergeben sich unterschiedlichste Anforderungen an die Sicherstellung einer hohen Datenqualität entlang des gesamten Wiedervermarktungprozesses.
+
+Zur Einordnung der im weiteren Verlauf entwickelten Lösung wird im folgenden Abschnitt die zugrunde liegende Systemlandschaft näher betrachtet.
+
+\section{System- und Datenlandschaft}
+
+Die in dieser Arbeit betrachteten Daten werden über mehrere Systeme hinweg verarbeitet und bereitgestellt. Für die Einordnung der später entwickelten Validierungsmaßnahmen wird daher zunächst die zugrunde liegende Systemlandschaft sowie der Datenfluss beschrieben.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{datenfluss5.png}
+    \caption{Visualisierung des Datenflusses}
+    \label{fig:prozesskette}
+\end{figure}
+
+Mit dem Umstieg vom SAP-basierten Altsystem auf das neu entwickelte Wiedervermarktungsystem UVR EVO wurde die bisherige monolithische Architektur durch eine Microservice Architektur ersetzt. Im Gegensatz zum Altsystem basiert die Plattform damit nicht mehr auf einer großen Codebasis, sondern auf mehreren voneinander getrennten Services. Durch diese Aufteilung können einzelne Funktionalitäten unabhängig voneinander entwickelt, gewartet und bereitgestellt werden.
+
+Zu den zentralen Services gehören (1) der Remarketing Service, (2) der Appraisal Service, (3) der Pricing Service, (4) der Vehicle Data Service, (5) der Invoicing Service, (6) der Sales Service und (7) der Logistics Service. Jeder Service verfügt über eine eigene MongoDB-Datenbank. MongoDB ist eine NoSQL-Datenbank, bei der Daten in Dokumenten gespeichert und zu sogenannten Collections zusammengefasst werden. Ein Dokument ist dabei vergleichbar mit einem Datensatz beziehungsweise einer Zeile in einer flachen Tabellenstruktur und eine Collection entspricht einer Tabelle. Im Gegensatz zu relationalen Datenbanken können Dokumente dabei hierarchisch aufgebaut sein und verschachtelte Strukturen enthalten. Die Speicherung der Fahrzeugdaten erfolgt dabei auf Basis der Fahrzeugidentifikationsnummer (VIN), sowie der Wiedervermarktungs-ID (Rema ID). Jedes Fahrzeug besitzt somit eine eigene "Fahrzeugakte", die in den Datenbanken der jeweiligen Services verwaltet wird.
+
+Für den Datenaustausch zwischen den einzelnen Services wird \textit{Apache Kafka} genutzt. Apache Kafka ist ein Messaging-System, das mithilfe von Kafka Nachrichten den Datenaustausch zwischen verschiedenen Anwendungen und Systemen in Echtzeit ermöglicht. Hierfür verfügt jeder Service über ein oder mehrere sogenannte Kafka Topics. Ein Kafka Topic fungiert dabei als ein Kommunikationskanal, über den Daten in Form von Kafka Nachrichten zwischen den Services ausgetauscht werden. Sobald sich etwas an einem Datensatz ändert, wird dieser an das Kafka Topic geschickt, wo andere Services wiederum die aktuellen Daten abgreifen können. 
+
+In einem weiteren Schritt werden die Daten aus den MongoDB-Datenbanken in eine PostgreSQL-Datenbank übertragen. PostgreSQL ist eine relationale Datenbank, in der Daten strukturiert in Tabellen mit definierten Spalten und Beziehungen zwischen Datensätzen gespeichert werden. Die Überführung in eine relationale Struktur erleichtert die standardisierte Bereitstellung und Weiterverarbeitung der Daten für nachgelagerte Systeme. Für diesen Übergang von der verschachtelten MongoDB-Struktur zu der flachen PostgreSQL-Struktur muss für jedes Attribut, das in der Postgres Datenbank angelegt wurde, der Pfad zu dem zugehörigen Attributwert in der MongoDB Fahrzeugakte angegeben werden.
+
+Anschließend werden die Daten in die unternehmensinterne Datenplattform Cloud Data Hub (CDH) geladen. Der CDH dient der zentralen Speicherung, Bereitstellung und Analyse von Daten aus verschiedenen Quellsystemen. Für die Datenübertragung werden die Daten aus der PostgreSQL-Datenbank mithilfe eines AWS Glue Jobs verarbeitet und in AWS S3 Buckets übertragen. AWS Glue ist ein Dienst zur Durchführung von ETL-Prozessen, bei denen Daten extrahiert, transformiert und in ein Zielsystem geladen werden. AWS S3 Buckets stellen cloudbasierter Speicherbereiche dar, in denen Dateien und Datenobjekte zentral abgelegt und verwaltet werden können.
+
+Das Laden der Daten aus der PostgreSQL-Datenbank in den CDH erfolgt einmal täglich.
 
 \section{Datenobjekte}
 
