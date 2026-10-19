@@ -69,7 +69,7 @@ Die in dieser Arbeit betrachteten Daten werden über mehrere Systeme hinweg vera
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{datenfluss5.png}
+    \includegraphics[width=\textwidth]{datenfluss6.png}
     \caption{Visualisierung des Datenflusses}
     \label{fig:prozesskette}
 \end{figure}
@@ -82,11 +82,35 @@ Für den Datenaustausch zwischen den einzelnen Services wird \textit{Apache Kafk
 
 In einem weiteren Schritt werden die Daten aus den MongoDB-Datenbanken in eine PostgreSQL-Datenbank übertragen. PostgreSQL ist eine relationale Datenbank, in der Daten strukturiert in Tabellen mit definierten Spalten und Beziehungen zwischen Datensätzen gespeichert werden. Die Überführung in eine relationale Struktur erleichtert die standardisierte Bereitstellung und Weiterverarbeitung der Daten für nachgelagerte Systeme. Für diesen Übergang von der verschachtelten MongoDB-Struktur zu der flachen PostgreSQL-Struktur muss für jedes Attribut, das in der Postgres Datenbank angelegt wurde, der Pfad zu dem zugehörigen Attributwert in der MongoDB Fahrzeugakte angegeben werden.
 
-Anschließend werden die Daten in die unternehmensinterne Datenplattform Cloud Data Hub (CDH) geladen. Der CDH dient der zentralen Speicherung, Bereitstellung und Analyse von Daten aus verschiedenen Quellsystemen. Für die Datenübertragung werden die Daten aus der PostgreSQL-Datenbank mithilfe eines AWS Glue Jobs verarbeitet und in AWS S3 Buckets übertragen. AWS Glue ist ein Dienst zur Durchführung von ETL-Prozessen, bei denen Daten extrahiert, transformiert und in ein Zielsystem geladen werden. AWS S3 Buckets stellen cloudbasierter Speicherbereiche dar, in denen Dateien und Datenobjekte zentral abgelegt und verwaltet werden können.
+Anschließend werden die Daten in die unternehmensinterne Datenplattform Cloud Data Hub (CDH) geladen. Der CDH dient der zentralen Speicherung, Bereitstellung und Analyse von Daten aus verschiedenen Quellsystemen. Für die Datenübertragung werden die Daten aus der PostgreSQL-Datenbank mithilfe eines AWS Glue Jobs verarbeitet und in AWS S3 Buckets übertragen. AWS Glue ist ein Dienst zur Durchführung von ETL-Prozessen, bei denen Daten extrahiert, transformiert und in ein Zielsystem geladen werden. AWS S3 Buckets stellen cloudbasierter Speicherbereiche dar, in denen Dateien und Datenobjekte zentral abgelegt und verwaltet werden können. Das Laden der Daten aus der PostgreSQL-Datenbank in den CDH erfolgt einmal täglich.
 
-Das Laden der Daten aus der PostgreSQL-Datenbank in den CDH erfolgt einmal täglich.
+\section{Datenbasis}
 
-\section{Datenobjekte}
+In dieser Arbeit stehen die Fahrzeug- und Prozessdaten im Fokus, die im Rahmen des Wiedervermarktungsprozesses verarbeitet werden. Die Daten werden im CDH in relationaler Form bereitgestellt und bilden die Grundlage für die Entwicklung der Datenqualiätsprüfungen. Für UVR EVO werden die Daten in mehreren Datensets gespeichert. Hierzu zählen ein Hauptdatensatz, der die Fahrzeugsidentifikationsnummern (VIN) enthält, sowie ein weiterer Datensatz, in dem die VIN aus Datenschutzgründen in pseudonymisierter Form als VAN gepsiehcert wird. 
+Die Datensets bestehen jeweils aus einer Haupttabelle, einer Zusatztabelle für Fahrzeugsstammdaten sowie einer Tabelle mit weiteren prozessbezogenen Informationen, beispielsweise aus dem Transportprozess. Ergänzend werden im Rahemn dieser Arbeit auch Daten aus der PostgreSQL Datenbank betrachete, da diese die Grundlage für die Bereitstellung der Daten im CDH bildet.
+
+Da der vollständige Datenbestand aus über 100 Attributen besteht, werden im Rahmen dieser Arbeit ausschließlich diejenigen Attribute betrachtet, die für die Durchführung der identifizirerten Datenqualitätsprüfungen relevant sind. Hierzu zählen insbesondere Attribute aus den Bereichen Fahrzeugidentifikation, Prozessstatus, Fahrzeugbewertung, Preisermittlung sowie länderspezifische Vermarktungsinformationen. 
+
+\begin{table}[h]
+    \centering
+    \caption{Zentrale Attribute der Untersuchung}
+    \label{tab:zentrale_attribute}
+    \begin{tabular}{p{4.5cm} p{9.5cm}}
+    \hline
+    \textbf{Attribut} & \textbf{Beschreibung} \\
+    \hline
+    remarketing\_process\_id & Eindeutige Identifikation eines Wiedervermarktungsprozesses. \\
+    vin & Fahrzeugidentifikationsnummer zur eindeutigen Identifikation eines Fahrzeugs. \\
+    van & Pseudonymisierte Form der VIN zur eindeutigen Fahrzeugidentifikation. \\
+    technical\_status & Kennzeichnet, ob ein Wiedervermarktungsprozess aktiv oder deaktiviert ist. \\
+    sales\_country\_iso\_code & Ländercode des Verkaufsmarktes. \\
+    status & Aktueller Bearbeitungsstatus des Fahrzeugs im Prozess. \\
+    sales\_information\_price\_gross & Bruttoverkaufspreis des Fahrzeugs. \\
+    first\_registration\_date & Datum der Erstzulassung des Fahrzeugs. \\
+    previous\_usage & Art der vorherigen vertraglichen Fahrzeugnutzung. \\
+    \hline
+    \end{tabular}
+\end{table}
 
 \section{Datenqualitätsanforderungen}
 
