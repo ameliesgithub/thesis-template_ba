@@ -7,11 +7,11 @@
 
 \section{Problemstellung und Motivation}
 
-Eine hohe Datenqualität stellt eine wesentliche Voraussetzung für die zuverlässige Nutzung von Informationssystemen dar. Dies gilt insbesondere für Systeme, die Geschäftsprozesse durch die Bereitstellung und Verarbeitung großer Datenmengen unterstützen. Im Rahmen der Wiedervermarktung für Gebrauchtwagen wurde bei BMW eine neue Plattform intern entwickelt und den Kunden bereitgestellt. Nutzer der Plattform sind aktuell die europäischen Märkte, die mit Hilfe dieses Systems die Gebrauchtwagen durch den Wiedervermarktungsprozess schleusen.
+Eine hohe Datenqualität stellt eine wesentliche Voraussetzung für die zuverlässige Nutzung von Informationssystemen dar. Dies gilt insbesondere für Systeme, die Geschäftsprozesse durch die Bereitstellung und Verarbeitung großer Datenmengen unterstützen. Für die Wiedervermarktung von Gebrauchtwagen wurde bei BMW eine neue Plattform intern entwickelt und den Kunden bereitgestellt. Nutzer der Plattform sind aktuell die europäischen Märkte, die mit Hilfe dieses Systems die Gebrauchtwagen durch den Wiedervermarktungsprozess schleusen.
 
-Anlass für die Entwicklung der neuen Plattform waren wiederkehrende Probleme sowie die mangelnde Stabilität des zuvor eingesetzten Systems, die zu Unzufriedenheit bei den Nutzern geführt haben. Mit der Neuentwicklung sollten wiederkehrende Probleme reduziert werden. Gleichzeitig sollte durch die interne Entwicklung eine vollständige Kontrolle und Transparenz über den zugrunde liegenden Quellcode geschaffen werden, um im Fall von Störungen oder Fehlern schneller und fundierter reagieren zu können.
+Anlass für die Entwicklung der neuen Plattform waren wiederkehrende Probleme sowie die mangelnde Stabilität des zuvor eingesetzten Systems, die zu Unzufriedenheit bei den Nutzern geführt haben. Mit der Neuentwicklung sollten diese reduziert werden. Gleichzeitig sollte durch die interne Entwicklung eine vollständige Kontrolle und Transparenz über den zugrunde liegenden Quellcode geschaffen werden, um im Fall von Störungen oder Fehlern schneller und fundierter reagieren zu können.
 
-Trotz der erfolgreichen Einführung des Neusystems in einigen Märkten bestehen weiterhin erhebliche Herausforderungen hinsichtlich der Datenqualität. Nutzer des Plattform stoßen regelmäßig auf fehlerhafte, unvollständige oder inkonsistente Datenbestände. Dies führt dazu, dass einzelne Prozessschritte teilweise außerhalb des Systems, beispielsweise mithilfe von Excel-Tabellen, durchgeführt werden, um die Korrektheit der zugrunde liegenden Daten sicherzustellen. Da die im System bereitgestellten Informationen die Grundlage für operative Entscheidungen innerhalb des Wiedervermarktungsprozesses bilden, können Datenqualitätsprobleme zu zusätzlichem manuellen Aufwand, ineffizienten Prozessabläufen und einer verminderten Akzeptanz des Systems führen.
+Trotz der erfolgreichen Einführung des Neusystems in einigen Märkten bestehen weiterhin erhebliche Herausforderungen hinsichtlich der Datenqualität. Nutzer der Plattform stoßen regelmäßig auf fehlerhafte, unvollständige oder inkonsistente Datenbestände. Dies führt dazu, dass einzelne Prozessschritte teilweise außerhalb des Systems, beispielsweise mithilfe von Excel-Tabellen, durchgeführt werden, um die Korrektheit der zugrunde liegenden Daten sicherzustellen. Da die im System bereitgestellten Informationen die Grundlage für operative Entscheidungen innerhalb des Wiedervermarktungsprozesses bilden, können Datenqualitätsprobleme zu zusätzlichem manuellem Aufwand, ineffizienten Prozessabläufen und einer verminderten Akzeptanz des Systems führen.
 
 Bisher besteht keine systematische Datenqualitätsüberwachung. Prüfungen erfolgen derzeit überwiegend manuell oder anhand verschiedener Auswertungen innerhalb von QuickSuite, ein von Amazon Web Services bereitgestellter Dienst zur Visualisierung, Analyse und Bereitstellung von Daten in interaktiven Dashboards. Ein strukturierter Ansatz zur standardisierten Überwachung der Datenqualität fehlt bisher. 
 
@@ -40,7 +40,7 @@ Aus der beschriebenen Problemstellung und Zielsetzung ergibt sich die folgende H
 
 Zur Beantwortung der Hauptforschungsfrage werden mehrere Unterfragen betrachtet. Diese adressieren die Ermittlung der Anforderungen, die Entwicklung und Umsetzung des Konzepts sowie dessen Evaluation.
 \begin{description} 
-    \item[\textbf{F\textsubscript{1}:}] \textbf{Welche Datenqualitätsanforderungen bestehen für die relevanten Datenobjekte des Wiedervermarktungsprozesses?} 
+    \item[\textbf{F\textsubscript{1}:}] \textbf{Welche Datenqualitätsanforderungen bestehen für die relevanten Daten des Wiedervermarktungsprozesses?} 
     \label{rq:f1} 
 \end{description} 
 
@@ -64,7 +64,7 @@ Zur Beantwortung der Hauptforschungsfrage werden mehrere Unterfragen betrachtet.
     \label{rq:f5} 
 \end{description}
 
-Die Beantwortung dieser Forschungsfragen bildet die Grundlage für die Entwicklung und Evaluation des Artefakts im Sinne der Design Science Research \ref{chap:Forschungsmethodik}. Die einzelnen Forschungsfragen werden dabei den entsprechenden Phasen der Konzeption, Umsetzung und Evaluation zugeordnet.
+Die Beantwortung dieser Forschungsfragen bildet die Grundlage für die Entwicklung und Evaluation des Artefakts im Sinne der Design Science Research (Ref richtig einbauen zu Kapitel 3). Die einzelnen Forschungsfragen werden dabei den entsprechenden Phasen der Konzeption, Umsetzung und Evaluation zugeordnet.
 
 \section{Aufbau der Arbeit}
 

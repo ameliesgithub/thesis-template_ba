@@ -9,6 +9,394 @@
 
 \section{Validierungsregeln}
 
+Auf Grundlage der identifizierten Datenqualitätsanforderungen werden konkrete Validierungsregeln für die betrachteten Datensätze abgeleitet. Alle Validierungsregeln werden sowohl für den Vin-basierten Datensatz als auch den pseudonymisierten VAN-Datensatz implementiert. Jede Validierungsregel spezifiziert die zu prüfenden Attribute, ihren Geltungsbereich sowie die zu erfüllende Qualitätsanforderung. Die Validierungsregeln werden den zuvor definierten Datenqualitätsdimensionen zugeordnet.
+
+\subsection{Completeness}
+
+Die Dimension Vollständigkeit umfasst Validierungsregeln, mit denen geprüft wird, ob die für den jeweiligen Anwendungsfall erforderlichen Attribute befüllt sind.
+
+\medskip
+\noindent\textbf{C01 -- Vollständigkeit verpflichtender Attribute}
+\begin{description} 
+    \item[Attribute:] \texttt{remarketing\_process\_id}, \texttt{vin\_17}, \texttt{sales\_country\_iso\_code}, \texttt{technical\_status}, \texttt{first\_registration\_date}, \texttt{local\_currency}, \texttt{owner}, \texttt{previous\_usage} 
+    \item[Geltungsbereich:] Datensätze mit \texttt{technical\_status = 'ACTIVE'} 
+    \item[Validierungsregel:] Die definierten Pflichtattribute dürfen innerhalb des angegebenen Geltungsbereichs keine fehlenden Werte enthalten. 
+\end{description} 
+    
+\medskip 
+\noindent\textbf{C02 -- Vorhandensein grundlegender Attribute} 
+\begin{description} 
+    \item[Attribute:] \texttt{vin\_17}, \texttt{remarketing\_process\_id}, \texttt{sales\_country\_iso\_code}, \texttt{technical\_status} 
+    \item[Geltungsbereich:] Gesamtes Schema des VIN-Datensatzes 
+    \item[Validierungsregel:] Die definierten grundlegenden Attribute müssen im Schema des Datensatzes vorhanden sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C03 -- Vollständigkeit des Kennzeichens} 
+\begin{description} 
+    \item[Attribut:] \texttt{licence\_plate} 
+    \item[Geltungsbereich:] Datensätze mit einem Verkaufsland aus \texttt{AU}, \texttt{BG}, \texttt{CZ}, \texttt{ES}, \texttt{PT}, \texttt{FI}, \texttt{FR}, \texttt{GR}, \texttt{HU}, \texttt{IE}, \texttt{IT}, \texttt{NL}, \texttt{NO}, \texttt{PL}, \texttt{RO}, \texttt{SE}, \texttt{SI}, \texttt{SK}, \texttt{GB} oder \texttt{ZA} 
+    \item[Validierungsregel:] Für Fahrzeuge aus den angegebenen Verkaufsländern muss ein Kennzeichen vorhanden sein, da in diesen Ländern das Kennzeichen an das Fahrzeug gebunden ist anstatt an den Besitzer des Fahrzeugs.
+\end{description} 
+
+\medskip 
+\noindent\textbf{C04 -- Vollständigkeit des Defleet-Datums} 
+\begin{description}  
+    \item[Attribut:] \texttt{defleet\_date} 
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{status} und \texttt{previous\_usage = 'AGENT\_DEMO'} 
+    \item[Validierungsregel:] Für ehemalige 'AGENT\_DEMO' Fahrzeuge mit vorhandenem Status muss ein Defleet-Datum hinterlegt sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C05 -- Vollständigkeit abgeschlossener Begutachtungen} 
+\begin{description} 
+    \item[Attribute:] \texttt{appraisal\_type}, \texttt{appraisal\_date\_performed}, \texttt{appraisal\_mileage}, \\ \texttt{damage\_amount\_total\_net}, \texttt{damage\_amount\_total\_gross} 
+    \item[Geltungsbereich:] Datensätze mit \texttt{appraisal\_status = 'COMPLETED'} 
+    \item[Validierungsregel:] Für abgeschlossene Begutachtungen müssen die Art, das Durchführungsdatum, der Kilometerstand sowie die Netto- und Bruttoschadenssumme angegeben sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C06 -- Vollständigkeit der Angabe zu Fahrzeugsteuerzahlung} 
+\begin{description} 
+    \item[Attribut:] \texttt{margin\_car} 
+    \item[Geltungsbereich:] Aktive Wholesale-Datensätze, deren \texttt{status} entweder fehlt oder einem der Werte \texttt{VEHICLE\_RETURNED}, \texttt{APPRAISAL\_COMPLETED}, \texttt{OFFERED} oder \texttt{READY\_FOR\_SALE} entspricht 
+    \item[Validierungsregel:] Für die betrachteten aktiven Wholesale-Fahrzeuge muss angegeben sein, ob für das Fahrzeug bereits Steuern gezahlt wurden oder dies noch erfolgen muss beim Wiederverkauf. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C07 -- Vollständigkeit des aktuellen Angebotspreises} 
+\begin{description} 
+    \item[Attribut:] \texttt{current\_offer\_price\_net} 
+    \item[Geltungsbereich:] Datensätze mit \texttt{status = 'OFFERED'} 
+    \item[Validierungsregel:] Für angebotene Fahrzeuge muss ein aktueller Nettoangebotspreis vorhanden sein. 
+\end{description} 
+
+\medskip \noindent\textbf{C08 -- Vollständigkeit der Verkaufsinformationen} 
+\begin{description} 
+    \item[Attribute:] \texttt{sales\_date}, \texttt{sales\_information\_price\_net} 
+    \item[Geltungsbereich:] Datensätze mit \texttt{sales\_result = 'SOLD'} 
+    \item[Validierungsregel:] Für verkaufte Fahrzeuge müssen das Verkaufsdatum und der Nettoverkaufspreis vorhanden sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C09 -- Vollständigkeit der Pricing-Informationen} 
+\begin{description} 
+    \item[Attribute:] \texttt{pricing\_order\_id}, \texttt{pricing\_engine\_flag} 
+    \item[Geltungsbereich:] Datensätze mit einem Status aus \texttt{APPRAISAL\_COMPLETED}, \texttt{READY\_FOR\_SALE}, \texttt{OFFERED}, \texttt{ORDERED}, \texttt{INVOICED} oder \texttt{HANDED\_OVER} 
+    \item[Validierungsregel:] Ab dem Abschluss der Begutachtung müssen eine Pricing-Auftrags-ID und die Information, ob das BMW-interne, KI-basierte Preisgenerierungs-Tool verwendet wurde, vorhanden sein.
+\end{description} 
+
+\medskip 
+\noindent\textbf{C10 -- Vollständigkeit des Zeitpunkts der Statuswechsel} 
+\begin{description} 
+    \item[Attribut:] \texttt{vehicle\_returned\_status\_time}, \texttt{handed\_over\_status\_time}, \texttt{invoiced\_status\_time}, \texttt{appraisal\_completed\_status\_time}, \texttt{ordered\_status\_time}, \texttt{offered\_status\_time}, \texttt{ready\_for\_sale\_status\_time}  
+    \item[Geltungsbereich:] Datensätze mit dem entsprechenden Status. 
+    \item[Validierungsregel:] Für zurückgegebene Fahrzeuge muss der Zeitpunkt des entsprechenden Statuswechsels vorhanden sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C11 -- Vollständigkeit der Rechnungs-ID} 
+\begin{description}  
+    \item[Attribut:] \texttt{invoice\_id} 
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{invoice\_status} 
+    \item[Validierungsregel:] Wenn ein Rechnungsstatus vorhanden ist, muss ebenfalls eine Rechnungs-ID vorhanden sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C12 -- Vollständigkeit der Auktionspreise} 
+\begin{description} 
+    \item[Attribute:] \texttt{auction\_starting\_price\_approved\_gross}, \\ \texttt{auction\_starting\_price\_approved\_net}, \texttt{net\_auction\_starting\_price\_recommended}, \\ \texttt{net\_minimum\_reservation\_price\_recommended}, \\ \texttt{net\_minimum\_reservation\_price\_approved} 
+    \item[Geltungsbereich:] Datensätze mit \texttt{sale\_context = 'WHOLESALE'} und \texttt{status = 'READY\_FOR\_SALE'} 
+    \item[Validierungsregel:] Für verkaufsbereite Wholesale-Fahrzeuge müssen die definierten Auktions- und Mindestreservierungspreise vorhanden sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C13 -- Vollständigkeit der Gebotsinformationen für Auktionen} 
+\begin{description} 
+    \item[Attribute:] \texttt{number\_of\_bids}, \texttt{highest\_bid} 
+    \item[Geltungsbereich:] Wholesale-Datensätze mit dem Verkaufsevent \texttt{EXTERNAL\_AUCTION} oder \\ \texttt{INTERNAL\_AUCTION} und einem vorhandenen \texttt{sales\_result} 
+    \item[Validierungsregel:] Für abgeschlossene interne oder externe Auktionen müssen die Anzahl der Gebote und das höchste Gebot vorhanden sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C14 -- Vollständigkeit landesspezifischer Fahrzeugattribute in den Niederlanden} 
+\begin{description} 
+    \item[Attribute:] \texttt{original\_bpm}, \texttt{licence\_plate\_registration\_date} 
+    \item[Geltungsbereich:] Datensätze mit \texttt{sales\_country\_iso\_code = 'NL'} 
+    \item[Validierungsregel:] Für Fahrzeuge mit Verkaufsland Niederlande müssen die Zulassungssteuer (\texttt{original\_bpm}) sowie das Zulassungsdatum des Kennzeichens vorhanden sein. 
+\end{description}
+
+\subsection{Eindeutigkeit} 
+\label{sec:validierungsregeln-eindeutigkeit} 
+
+Die Dimension Eindeutigkeit umfasst Validierungsregeln, mit denen mehrfach auftretende Identifikatoren innerhalb des VIN-Datensatzes identifiziert werden. 
+
+\medskip 
+\noindent\textbf{C15 -- Eindeutigkeit der Remarketing-Prozess-ID} 
+\begin{description}  
+    \item[Attribut:] \texttt{remarketing\_process\_id} 
+    \item[Geltungsbereich:] Gesamter VIN-Datensatz 
+    \item[Validierungsregel:] Jede Remarketing-Prozess-ID darf innerhalb des Datensatzes nur einmal vorkommen.
+\end{description} 
+
+\medskip 
+\noindent\textbf{C16 -- Eindeutigkeit der VIN} 
+\begin{description} 
+    \item[Attribut:] \texttt{vin\_17} 
+    \item[Geltungsbereich:] Nur für Fahrzeuge mit \texttt{technical\_status = 'ACTIVE'} 
+    \item[Validierungsregel:] Jede VIN darf innerhalb des Datensatzes nur einmal vorkommen. 
+\end{description} 
+
+\subsection{Validität} 
+\label{sec:validierungsregeln-validitaet} 
+
+Die Dimension Validität umfasst Regeln, mit denen die Konformität von Attributwerten mit definierten Formaten und zulässigen Wertemengen geprüft wird. 
+
+\medskip 
+\noindent\textbf{C17 -- Validität des Fahrzeugstatus} 
+\begin{description}  
+    \item[Attribut:] \texttt{status} 
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{status} 
+    \item[Validierungsregel:] Der Fahrzeugstatus muss einem der Werte \texttt{VEHICLE\_RETURNED}, \\ \texttt{APPRAISAL\_COMPLETED}, \texttt{READY\_FOR\_SALE}, \texttt{OFFERED}, \texttt{ORDERED}, \texttt{INVOICED} oder \texttt{HANDED\_OVER} entsprechen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C18 -- Validität des technischen Status} 
+\begin{description} 
+    \item[Attribut:] \texttt{technical\_status} 
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{technical\_status} 
+    \item[Validierungsregel:] Der technische Status muss \texttt{ACTIVE} oder \texttt{DEACTIVATED} entsprechen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C19 -- Formale Validität der VIN} 
+\begin{description} 
+    \item[Attribut:] \texttt{vin\_17}
+    \item[Geltungsbereich:] Gesamter VIN-Datensatz 
+    \item[Validierungsregel:] Die VIN muss die für eine Fahrzeug-Identifizierungsnummer definierten formalen Anforderungen erfüllen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C20 -- Validität des aktuellen Fahrzeugeigentümers} 
+\begin{description} 
+    \item[Attribut:] \texttt{owner} 
+    \item[Geltungsbereich:] Gesamter VIN-Datensatz 
+    \item[Validierungsregel:] Der Eigentümer muss einem der Werte \texttt{AG}, \texttt{AL}, \texttt{ESO}, \texttt{NSC} oder \texttt{SF} entsprechen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C21 -- Validität des Begutachtungsstatus} 
+\begin{description} 
+    \item[Attribut:] \texttt{appraisal\_status} 
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{appraisal\_status} 
+    \item[Validierungsregel:] Der Begutachtungsstatus muss einem der Werte \texttt{ANNOUNCED},  \\ \texttt{APPROVED\_FOR\_REPAIR}, \texttt{AUTHORIZED}, \texttt{CANCELLED}, \texttt{COMPLETED}, \texttt{CONFIRMED}, \texttt{IN\_PROGRESS}, \\ \texttt{PRE\_INSPECTED}, \texttt{REQUESTED} oder \texttt{SCHEDULED} entsprechen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C22 -- Validität des Rechnungsstatus} 
+\begin{description} 
+    \item[Attribut:] \texttt{invoice\_status} 
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{invoice\_status} 
+    \item[Validierungsregel:] Der Rechnungsstatus muss einem der Werte \texttt{CANCELLATION\_IN\_PROGRESS}, \texttt{CANCELLATION\_REQUESTED}, \texttt{CANCELLED}, \texttt{FAILED}, \texttt{INVOICED}, \texttt{INVOICE\_REQUEST\_PENDING}, \texttt{PROCESSED} oder \texttt{REQUESTED} entsprechen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C23 -- Validität der Begutachtungsart} 
+\begin{description} 
+    \item[Attribut:] \texttt{appraisal\_type} 
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{appraisal\_type} 
+    \item[Validierungsregel:] Die Begutachtungsart muss einem der Werte \texttt{CUSTOMER}, \texttt{DEALER}, \texttt{FINAL}, \texttt{FIRST\_USAGE}, \texttt{POSTREPAIR} oder \texttt{PREREPAIR} entsprechen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C24 -- Validität der vorherigen Nutzung} 
+\begin{description} 
+    \item[Attribut:] \texttt{previous\_usage} 
+    \item[Geltungsbereich:] Datensätze mit vorhandener \texttt{previous\_usage} 
+    \item[Validierungsregel:] Die vorherige Nutzung muss einem der Werte \texttt{AGENT\_DEMO}, \texttt{COMPANY\_CAR}, \texttt{EMPLOYEE\_RENTAL}, \texttt{EXAG}, \texttt{OFF\_FLEET}, \texttt{OFF\_LEASE}, \texttt{OTHER} oder \texttt{RENTAL\_BUY\_BACK} entsprechen. 
+\end{description}
+
+\medskip 
+\noindent\textbf{C25 -- Validität des Pricing-Status} 
+\begin{description} 
+    \item[Attribut:] \texttt{pricing\_status} 
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{pricing\_status} 
+    \item[Validierungsregel:] Der Pricing-Status muss einem der Werte \texttt{APPROVAL\_PENDING\_SECOND\_LEVEL}, \texttt{APPROVAL\_PENDING\_THIRD\_LEVEL}, \texttt{APPROVED} oder \texttt{AWAITING\_PRICING} entsprechen. 
+\end{description}
+
+\medskip
+\noindent\textbf{C26 -- Validität des Verkaufskontexts}
+\begin{description}
+    \item[Attribut:] \texttt{sale\_context}
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{sale\_context}
+    \item[Validierungsregel:] Der Verkaufskontext muss einem der Werte \texttt{RETAIL} oder \texttt{WHOLESALE} entsprechen.
+\end{description}
+
+\medskip
+\noindent\textbf{C27 -- Validität des Verkaufslandes}
+\begin{description}
+    \item[Attribut:] \texttt{sales\_country\_iso\_code}
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{sales\_country\_iso\_code}
+    \item[Validierungsregel:] Der Ländercode des Verkaufslandes muss einem der definierten Werte \texttt{AT}, \texttt{AU}, \texttt{BE}, \texttt{BG}, \texttt{CH}, \texttt{CZ}, \texttt{DE}, \texttt{DK}, \texttt{ES}, \texttt{FI}, \texttt{FR}, \texttt{GB}, \texttt{GR}, \texttt{HU}, \texttt{IE}, \texttt{IT}, \texttt{LU}, \texttt{NL}, \texttt{NO}, \texttt{PL}, \texttt{PT}, \texttt{RO}, \texttt{SE}, \texttt{SI}, \texttt{SK} oder \texttt{ZA} entsprechen.
+\end{description}
+
+\medskip
+\noindent\textbf{C28 -- Validität des Kraftstofftyps}
+\begin{description}
+    \item[Attribut:] \texttt{fuel\_type}
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{fuel\_type}
+    \item[Validierungsregel:] Der Kraftstofftyp muss einem der Werte \texttt{GASOLINE}, \texttt{ELECTRIC}, \texttt{DIESEL}, \texttt{OTHER} oder \texttt{PHEV} entsprechen.
+\end{description}
+
+\medskip
+\noindent\textbf{C29 -- Validität des Elektrifizierungsgrades}
+\begin{description}
+    \item[Attribut:] \texttt{degree\_of\_electrification}
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{degree\_of\_electrification}
+    \item[Validierungsregel:] Der Elektrifizierungsgrad muss einem der Werte \texttt{BEV\_FULL\_ELECTRIC}, \texttt{NOHY\_NO\_HYBRID}, \texttt{MHEV\_MILD\_HYBRID}, \texttt{REX\_BEV\_WITH\_RANGE\_EXTENDER}, \texttt{OTHER} oder \texttt{PHEV\_PLUGIN\_HYBRID} entsprechen.
+\end{description}
+
+\medskip
+\noindent\textbf{C30 -- Validität der aktuellen Bereifung}
+\begin{description}
+    \item[Attribut:] \texttt{current\_tires}
+    \item[Geltungsbereich:] Datensätze mit vorhandenem \texttt{current\_tires}
+    \item[Validierungsregel:] Die aktuelle Bereifung muss einem der Werte \texttt{All season}, \texttt{Summer} oder \texttt{Winter} entsprechen.
+\end{description}
+
+\subsection{Vollständigkeit}
+
+\medskip
+\noindent\textbf{C31 -- Vollständigkeit der Rechnungsinformationen}
+\begin{description}
+    \item[Attribute:] \texttt{invoice\_id}, \texttt{invoice\_number}, \texttt{invoice\_date}, \texttt{invoice\_status}, \texttt{invoice\_requested\_date}, \texttt{invoice\_ag\_business\_number}
+    \item[Geltungsbereich:] Datensätze mit \texttt{status = 'INVOICED'}
+    \item[Validierungsregel:] Für fakturierte Fahrzeuge müssen die definierten Rechnungsinformationen vollständig vorhanden sein.
+\end{description}
+
+\medskip
+\noindent\textbf{C32 -- Vollständigkeit der Käuferinformationen bei Wholesale-Verkäufen}
+\begin{description}
+    \item[Attribute:] \texttt{wholesale\_invoice\_date}, \texttt{buyer\_dealer\_buno}, \texttt{buyer\_company\_name}, \texttt{buyer\_country\_code}
+    \item[Geltungsbereich:] Datensätze mit \texttt{sales\_result = 'SOLD'} und \texttt{sale\_context = 'WHOLESALE'}
+    \item[Validierungsregel:] Für verkaufte Wholesale-Fahrzeuge müssen das Wholesale-Rechnungsdatum sowie die definierten Käuferinformationen vollständig vorhanden sein.
+\end{description}
+
+\subsection{Konsistenz}
+
+\medskip 
+\noindent\textbf{C33 -- Konsistenz von Brutto- und Nettoverkaufspreis} 
+\begin{description} 
+    \item[Attribute:] \texttt{sales\_information\_price\_gross}, 
+    \texttt{sales\_information\_price\_net} 
+    \item[Geltungsbereich:] Datensätze, bei denen beide Preisattribute vorhanden sind 
+    \item[Validierungsregel:] Der Bruttoverkaufspreis muss größer als der Nettoverkaufspreis sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C34 -- Konsistenz von Brutto- und Nettoschadenssumme} 
+\begin{description} 
+    \item[Attribute:] \texttt{damage\_amount\_total\_gross}, \texttt{damage\_amount\_total\_net} 
+    \item[Geltungsbereich:] Datensätze, bei denen beide Schadenssummen vorhanden sind 
+    \item[Validierungsregel:] Die Bruttoschadenssumme muss größer als die Nettoschadenssumme sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C35 -- Konsistenz von Brutto- und Netto-Pre-Sale-Festpreis} 
+\begin{description}  
+    \item[Attribute:] \texttt{pre\_sale\_fixed\_price\_gross}, \texttt{pre\_sale\_fixed\_price\_net} 
+    \item[Geltungsbereich:] Datensätze, bei denen beide Preisattribute vorhanden sind 
+    \item[Validierungsregel:] Der Brutto-Pre-Sale-Festpreis muss größer als der entsprechende Nettopreis sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C36 -- Konsistenz des genehmigten Auktionsstartpreises} 
+\begin{description} 
+    \item[Attribute:] \texttt{auction\_starting\_price\_approved\_gross}, \texttt{auction\_starting\_price\_approved\_net} 
+    \item[Geltungsbereich:] Datensätze, bei denen beide Preisattribute vorhanden sind
+    \item[Validierungsregel:] Der genehmigte Brutto-Auktionsstartpreis muss größer als der entsprechende Nettopreis sein. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C37 -- Konsistenz des MSRP-Fahrzeuglistenpreises} 
+\begin{description} 
+    \item[Attribute:] \texttt{msrp\_vehicle\_list\_price\_gross}, \texttt{msrp\_vehicle\_list\_price\_net} 
+    \item[Geltungsbereich:] Datensätze, bei denen beide Preisattribute vorhanden sind 
+    \item[Validierungsregel:] Der Brutto-MSRP-Fahrzeuglistenpreis muss größer als der entsprechende Nettopreis sein. Dabei steht MSRP für Manufacturer´s Suggested Retail Price, auf Deutsch wäre das der Listenpreis des konkreten Fahrzeugs inklusive seiner Ausstattung
+\end{description} 
+
+\medskip 
+\noindent\textbf{C38 -- Konsistenz des MSRP-Modelllistenpreises} 
+\begin{description} 
+    \item[Attribute:] \texttt{msrp\_model\_list\_price\_gross}, \texttt{msrp\_model\_list\_price\_net} 
+    \item[Geltungsbereich:] Datensätze, bei denen beide Preisattribute vorhanden sind 
+    \item[Validierungsregel:] Der Brutto-MSRP-Modelllistenpreis muss größer als der entsprechende Nettopreis sein. Dabei steht MSRP für Manufacturer´s Suggested Retail Price, auf Deutsch wäre das der Listenpreis des Basismodells ohne Sonderaustattung.
+\end{description} 
+
+\medskip 
+\noindent\textbf{C39 -- Konsistenz von Verkaufsqualifikation und Verkaufskontext} 
+\begin{description} 
+    \item[Attribute:] \texttt{retail\_sale\_qualification}, \texttt{sale\_context} 
+    \item[Geltungsbereich:] Datensätze mit \texttt{retail\_sale\_qualification = false} 
+    \item[Validierungsregel:] Ist ein Fahrzeug nicht für den Retail-Verkauf qualifiziert, muss der Verkaufskontext \texttt{WHOLESALE} entsprechen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C40 -- Konsistenz des Verkaufskontexts bei Pre-Repair-Begutachtungen} 
+\begin{description} 
+    \item[Attribute:] \texttt{appraisal\_type}, \texttt{retail\_sale\_qualification}, \texttt{sale\_context} 
+    \item[Geltungsbereich:] Datensätze mit \texttt{appraisal\_type = 'PREREPAIR'} und \texttt{retail\_sale\_qualification = false} 
+    \item[Validierungsregel:] Für nicht für den Retail-Verkauf qualifizierte Fahrzeuge mit einer Pre-Repair-Begutachtung muss der Verkaufskontext \texttt{WHOLESALE} entsprechen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C41 -- Konsistenz des Verkaufskontexts bei Post-Repair-Begutachtungen} 
+\begin{description}  
+    \item[Attribute:] \texttt{appraisal\_type}, \texttt{retail\_sale\_qualification}, \texttt{sale\_context} 
+    \item[Geltungsbereich:] Datensätze mit \texttt{appraisal\_type = 'POSTREPAIR'} und \texttt{retail\_sale\_qualification = true} 
+    \item[Validierungsregel:] Für für den Retail-Verkauf qualifizierte Fahrzeuge mit einer Post-Repair-Begutachtung muss der Verkaufskontext \texttt{RETAIL} entsprechen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C42 -- Chronologische Konsistenz des Verkaufsevents} 
+\begin{description} 
+    \item[Attribute:] \texttt{sale\_event\_start\_time}, \texttt{sale\_event\_end\_time} 
+    \item[Geltungsbereich:] Datensätze, bei denen sowohl \texttt{sale\_event\_start\_time} als auch \texttt{sale\_event\_end\_time} vorhanden sind 
+    \item[Validierungsregel:] Der Endzeitpunkt eines Verkaufsevents muss nach dessen Startzeitpunkt liegen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C43 -- Chronologische Konsistenz von Erstzulassung und Verkauf} 
+\begin{description} 
+    \item[Attribute:] \texttt{first\_registration\_date}, \texttt{sales\_date} 
+    \item[Geltungsbereich:] Datensätze, bei denen sowohl \texttt{first\_registration\_date} als auch \texttt{sales\_date} vorhanden sind 
+    \item[Validierungsregel:] Das Erstzulassungsdatum darf nicht nach dem Verkaufsdatum liegen. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C44 -- Konsistenz des genehmigten Buy-Now-Preises} 
+\begin{description} 
+    \item[Attribute:] \texttt{buy\_now\_price\_approved}, \texttt{buy\_now\_price\_approved\_gross} 
+    \item[Geltungsbereich:] Datensätze, bei denen sowohl \texttt{buy\_now\_price\_approved} als auch \texttt{buy\_now\_price\_approved\_gross} vorhanden sind 
+    \item[Validierungsregel:] Der genehmigte Brutto-Buy-Now-Preis muss größer sein als der genehmigten Netto-Buy-Now-Preis. 
+\end{description} 
+
+\medskip 
+\noindent\textbf{C45 -- Chronologische Konsistenz des tatsächlichen Abhol- und Lieferdatums} 
+\begin{description} 
+    \item[Attribute:] \texttt{actual\_pickup\_date}, \texttt{actual\_delivery\_date} 
+    \item[Geltungsbereich:] Datensätze, bei denen sowohl \texttt{actual\_pickup\_date} als auch \\ \texttt{actual\_delivery\_date} vorhanden sind 
+    \item[Validierungsregel:] Das tatsächliche Abholdatum darf nicht nach dem tatsächlichen Lieferdatum liegen. 
+\end{description}
+
+\medskip 
+\noindent\textbf{C46 -- Chronologische Konsistenz des bestätigten Abhol- und Lieferdatums} 
+\begin{description} 
+    \item[Attribute:] \texttt{confirmed\_pickup\_date}, \texttt{confirmed\_delivery\_date} 
+    \item[Geltungsbereich:] Datensätze, bei denen sowohl \texttt{confirmed\_pickup\_date} als auch \\ \texttt{confirmed\_delivery\_date} vorhanden sind 
+    \item[Validierungsregel:] Das bestätigte Abholdatum darf nicht nach dem bestätigten Lieferdatum liegen. 
+\end{description}
+
 \section{Technische Umsetzung}
 
 \end{document}
